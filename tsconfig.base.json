@@ -1,20 +1,32 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {}
-  },
-  "exclude": ["node_modules", "tmp"]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "rootDirs": ["."],
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "esModuleInterop": true,
+        "typeRoots": ["node_modules/@types"],
+        "types": ["jest"],
+        "lib": ["es2017", "dom", "ESNext.AsyncIterable"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowSyntheticDefaultImports": true,
+        "strictPropertyInitialization": false,
+        "noErrorTruncation": true,
+        "baseUrl": ".",
+        "paths": {
+            "@api/io-model": ["libs/api-iomodel/src/index.ts"],
+            "@appleptr16/elemental": ["libs/elemental/src/index.ts"],
+            "@appleptr16/utilities": ["libs/utilities/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
 }

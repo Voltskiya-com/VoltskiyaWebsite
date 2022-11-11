@@ -1,0 +1,935 @@
+{
+    "biomesByName": {
+        "Wastefield": {
+            "icon": { "name": "Wastefield", "material": "COARSE_DIRT" },
+            "mobs": {
+                "Chicken": 6,
+                "Dilopha": 9,
+                "Decrepit Husk": 4,
+                "Shambling Husk": 4,
+                "Limus": 7,
+                "Dukkar": 3,
+                "Pig": 4,
+                "Sandpiper": 4
+            },
+            "spawnRate": 7,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 15 },
+                "MIDNIGHT": { "degrees": -25 },
+                "NOON": { "degrees": 30 },
+                "EVENING": { "degrees": 10 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 35
+        },
+        "Roofed Forest": {
+            "icon": {
+                "name": "Roofed Forest",
+                "material": "BROWN_MUSHROOM_BLOCK"
+            },
+            "mobs": {
+                "Pouncing Widow": 11,
+                "Cordico": 7,
+                "Rabbit": 7,
+                "Carno": 3,
+                "Chicken": 5,
+                "Fox": 2,
+                "Mane": 3,
+                "Tarantula": 13
+            },
+            "spawnRate": 18,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": -5 },
+                "MIDNIGHT": { "degrees": -20 },
+                "NOON": { "degrees": 20 },
+                "EVENING": { "degrees": 5 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 12
+        },
+        "Swamp": {
+            "icon": { "name": "Swamp", "material": "LILY_PAD" },
+            "mobs": {
+                "Sarko": 1,
+                "Crocodile": 5,
+                "Chicken": 3,
+                "Decipio": 6,
+                "Dilopha": 4,
+                "Brown Axolotl": 2,
+                "Limus": 4,
+                "Swarmth": 9,
+                "Dukkar": 1,
+                "Pig": 5,
+                "Pompeius": 4
+            },
+            "spawnRate": 0,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 25 },
+                "MIDNIGHT": { "degrees": 10 },
+                "NOON": { "degrees": 50 },
+                "EVENING": { "degrees": 35 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 25
+        },
+        "Central Plains": {
+            "icon": { "name": "Central Plains", "material": "GRASS_BLOCK" },
+            "mobs": {
+                "Horse": 1,
+                "Rabbit": 4,
+                "Chicken": 3,
+                "Cow": 6,
+                "Tarantula": 3,
+                "Mane": 4
+            },
+            "spawnRate": 0,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 15 },
+                "MIDNIGHT": { "degrees": -15 },
+                "NOON": { "degrees": 30 },
+                "EVENING": { "degrees": 5 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 24
+        },
+        "Pastures": {
+            "icon": { "name": "Pastures", "material": "CARVED_PUMPKIN" },
+            "mobs": {
+                "Pardosa": 2,
+                "Rabbit": 7,
+                "Chicken": 4,
+                "Cow": 4,
+                "Dilopha": 2,
+                "Shambling Husk": 3
+            },
+            "spawnRate": 3,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 15 },
+                "MIDNIGHT": { "degrees": -10 },
+                "NOON": { "degrees": 50 },
+                "EVENING": { "degrees": 20 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 20
+        },
+        "Slimepit": {
+            "icon": { "name": "Slimepit", "material": "SLIME_BLOCK" },
+            "mobs": { "Limus": 1 },
+            "spawnRate": 25,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 25 },
+                "MIDNIGHT": { "degrees": 10 },
+                "NOON": { "degrees": 40 },
+                "EVENING": { "degrees": 25 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 43
+        },
+        "Spruce Forest": {
+            "icon": { "name": "Spruce Forest", "material": "SPRUCE_LOG" },
+            "mobs": {
+                "Accipiter": 2,
+                "Rabbit": 9,
+                "Carno": 2,
+                "Chicken": 4,
+                "Cow": 5,
+                "Fox": 3,
+                "Tarantula": 4,
+                "Mane": 4
+            },
+            "spawnRate": 16,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": -5 },
+                "MIDNIGHT": { "degrees": -25 },
+                "NOON": { "degrees": 20 },
+                "EVENING": { "degrees": 5 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 14
+        },
+        "Redwood": {
+            "icon": { "name": "Redwood", "material": "DARK_OAK_WOOD" },
+            "mobs": {
+                "Aquila": 5,
+                "Accipiter": 8,
+                "Potenaur": 2,
+                "Direwolf": 6,
+                "Apexora": 1,
+                "Rabbit": 7,
+                "Carno": 5,
+                "Cow": 7,
+                "Fox": 6,
+                "Wild Bear": 4,
+                "Mane": 7,
+                "Thylacoleo": 2,
+                "Microraptor": 10,
+                "Ospreyer": 2,
+                "Tarantula": 8
+            },
+            "spawnRate": 16,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": -15 },
+                "MIDNIGHT": { "degrees": -50 },
+                "NOON": { "degrees": -5 },
+                "EVENING": { "degrees": -25 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 34
+        },
+        "Beach": {
+            "icon": { "name": "Beach", "material": "SAND" },
+            "mobs": {
+                "Turtle": 2,
+                "Rabbit": 10,
+                "Chicken": 20,
+                "Dilopha": 1,
+                "Sandpiper": 8,
+                "Mane": 5
+            },
+            "spawnRate": 16,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 25 },
+                "MIDNIGHT": { "degrees": 5 },
+                "NOON": { "degrees": 33 },
+                "EVENING": { "degrees": 25 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 22
+        },
+        "Douglas Fir": {
+            "icon": { "name": "Douglas Fir", "material": "LARGE_FERN" },
+            "mobs": {
+                "Flike": 2,
+                "Accipiter": 4,
+                "Direwolf": 5,
+                "Rabbit": 8,
+                "Carno": 3,
+                "Chicken": 7,
+                "Cow": 4,
+                "Fox": 4,
+                "Mane": 7,
+                "Wild Bear": 4
+            },
+            "spawnRate": 14,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 5 },
+                "MIDNIGHT": { "degrees": -20 },
+                "NOON": { "degrees": 20 },
+                "EVENING": { "degrees": 5 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 40
+        },
+        "Basalt Piles": {
+            "icon": { "name": "Basalt Piles", "material": "SMOOTH_BASALT" },
+            "mobs": {
+                "Buzzard": 4,
+                "Pardosa": 6,
+                "Rabbit": 9,
+                "Carno": 1,
+                "Ospreyer": 4,
+                "Chicken": 5,
+                "Dilopha": 2,
+                "Decrepit Husk": 6,
+                "Shambling Husk": 6,
+                "Sandpiper": 3
+            },
+            "spawnRate": 8,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 30 },
+                "MIDNIGHT": { "degrees": -20 },
+                "NOON": { "degrees": 110 },
+                "EVENING": { "degrees": 55 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 19
+        },
+        "Forest Mountain": {
+            "icon": { "name": "Forest Mountain", "material": "ANDESITE" },
+            "mobs": {
+                "Aquila": 1,
+                "Potenaur": 1,
+                "Direwolf": 7,
+                "Rabbit": 7,
+                "Carno": 3,
+                "Cow": 4,
+                "Wasp": 3,
+                "Fox": 6,
+                "Mane": 7,
+                "Pig": 4,
+                "Preado": 1,
+                "Flike": 2,
+                "Pouncing Widow": 4,
+                "Mountain Llama": 5,
+                "Ospreyer": 3,
+                "Goat": 5,
+                "Chicken": 7
+            },
+            "spawnRate": 20,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 10 },
+                "MIDNIGHT": { "degrees": -30 },
+                "NOON": { "degrees": 15 },
+                "EVENING": { "degrees": -10 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 23
+        },
+        "Base Ocean": {
+            "icon": { "name": "Base Ocean", "material": "BLUE_STAINED_GLASS" },
+            "mobs": {
+                "Archaic Demi": 5,
+                "Glowsquid": 3,
+                "Squid": 19,
+                "Dolphin": 6,
+                "Depthcharge": 1,
+                "Shark": 7,
+                "Cod": 20,
+                "Axolotl": 8,
+                "Imum": 2
+            },
+            "spawnRate": 20,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 0 },
+                "MIDNIGHT": { "degrees": -35 },
+                "NOON": { "degrees": 5 },
+                "EVENING": { "degrees": -10 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 29
+        },
+        "Cursed Ridge": {
+            "icon": { "name": "Cursed Ridge", "material": "BIRCH_WOOD" },
+            "mobs": {
+                "Garish Knave": 4,
+                "Donkey": 1,
+                "Microraptor": 1,
+                "Rabbit": 5,
+                "Chicken": 6,
+                "Garish Havok (Weak)": 4,
+                "Fox": 3,
+                "Mane": 5,
+                "Tarantula": 4,
+                "Pig": 5
+            },
+            "spawnRate": 15,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 0 },
+                "MIDNIGHT": { "degrees": 0 },
+                "NOON": { "degrees": 0 },
+                "EVENING": { "degrees": 0 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 46
+        },
+        "River": {
+            "icon": { "name": "River", "material": "SEAGRASS" },
+            "mobs": { "River Demi": 4, "Salmon": 7 },
+            "spawnRate": 9,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 5 },
+                "MIDNIGHT": { "degrees": -15 },
+                "NOON": { "degrees": 10 },
+                "EVENING": { "degrees": 5 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 33
+        },
+        "Volcano Caldera": {
+            "icon": { "name": "Volcano Caldera", "material": "OBSIDIAN" },
+            "mobs": {},
+            "spawnRate": 5,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 90 },
+                "MIDNIGHT": { "degrees": 60 },
+                "NOON": { "degrees": 90 },
+                "EVENING": { "degrees": 90 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 15
+        },
+        "Icebergs": {
+            "icon": { "name": "Icebergs", "material": "BLUE_ICE" },
+            "mobs": {
+                "Glowsquid": 4,
+                "Squid": 2,
+                "Penguin": 5,
+                "Snow Fox": 5,
+                "Snowy Rabbit": 4,
+                "Cod": 7,
+                "Wild Bear": 3
+            },
+            "spawnRate": 15,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": -45 },
+                "MIDNIGHT": { "degrees": -120 },
+                "NOON": { "degrees": -30 },
+                "EVENING": { "degrees": -70 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 41
+        },
+        "Southern Plains": {
+            "icon": { "name": "Southern Plains", "material": "GRASS" },
+            "mobs": {
+                "Flike": 2,
+                "Pouncing Widow": 1,
+                "Rabbit": 5,
+                "Chicken": 4,
+                "Cow": 3,
+                "Dilopha": 1,
+                "Fox": 2,
+                "Mane": 3
+            },
+            "spawnRate": 7,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 25 },
+                "MIDNIGHT": { "degrees": -10 },
+                "NOON": { "degrees": 28 },
+                "EVENING": { "degrees": 15 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 21
+        },
+        "Rocky Hills": {
+            "icon": { "name": "Rocky Hills", "material": "POINTED_DRIPSTONE" },
+            "mobs": {
+                "Preado": 1,
+                "Buzzard": 3,
+                "Pardosa": 6,
+                "Rabbit": 5,
+                "Chicken": 3,
+                "Wild Lion": 1,
+                "Dilopha": 1,
+                "Decrepit Husk": 3,
+                "Shambling Husk": 3
+            },
+            "spawnRate": 15,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 35 },
+                "MIDNIGHT": { "degrees": -35 },
+                "NOON": { "degrees": 95 },
+                "EVENING": { "degrees": 65 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 13
+        },
+        "Ice Spikes": {
+            "icon": { "name": "Ice Spikes", "material": "PACKED_ICE" },
+            "mobs": {
+                "Glowsquid": 1,
+                "Aquila": 3,
+                "Yutyronus": 1,
+                "Direwolf": 5,
+                "Snow Fox": 4,
+                "Apexora": 1,
+                "Carno": 5,
+                "Sheep": 1,
+                "Snowy Rabbit": 6,
+                "Cow": 4,
+                "Goat": 3,
+                "Wild Bear": 6
+            },
+            "spawnRate": 16,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": -75 },
+                "MIDNIGHT": { "degrees": -110 },
+                "NOON": { "degrees": -60 },
+                "EVENING": { "degrees": -70 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 31
+        },
+        "Marshland": {
+            "icon": { "name": "Marshland", "material": "SMALL_DRIPLEAF" },
+            "mobs": {
+                "Sarko": 1,
+                "Crocodile": 8,
+                "Chicken": 4,
+                "Decipio": 3,
+                "Dilopha": 3,
+                "Limus": 4,
+                "Swarmth": 17,
+                "Brown Axolotl": 5,
+                "Dukkar": 3,
+                "Pompeius": 3,
+                "Pig": 5
+            },
+            "spawnRate": 15,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 20 },
+                "MIDNIGHT": { "degrees": -20 },
+                "NOON": { "degrees": 35 },
+                "EVENING": { "degrees": 10 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 42
+        },
+        "Boreal Forest": {
+            "icon": { "name": "Boreal Forest", "material": "SPRUCE_LEAVES" },
+            "mobs": {
+                "Bat": 4,
+                "Accipiter": 4,
+                "Direwolf": 4,
+                "Rabbit": 8,
+                "Carno": 4,
+                "Sheep": 1,
+                "Chicken": 9,
+                "Cow": 8,
+                "Goat": 3,
+                "Fox": 5,
+                "Wild Bear": 4,
+                "Mane": 7
+            },
+            "spawnRate": 13,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": -15 },
+                "MIDNIGHT": { "degrees": -40 },
+                "NOON": { "degrees": 0 },
+                "EVENING": { "degrees": -25 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 38
+        },
+        "Tar pits": {
+            "icon": { "name": "Tar pits", "material": "PETRIFIED_OAK_SLAB" },
+            "mobs": {
+                "Rabbit": 4,
+                "Decipio": 3,
+                "Chicken": 4,
+                "Cow": 1,
+                "Dilopha": 2,
+                "Limus": 2,
+                "Swarmth": 6,
+                "Tarantula": 3,
+                "Pig": 8,
+                "Mane": 3
+            },
+            "spawnRate": 5,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 10 },
+                "MIDNIGHT": { "degrees": -30 },
+                "NOON": { "degrees": 35 },
+                "EVENING": { "degrees": 20 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 10
+        },
+        "Snowy Mountains": {
+            "icon": {
+                "name": "Snowy Mountains",
+                "material": "POWDER_SNOW_BUCKET"
+            },
+            "mobs": {
+                "Aquila": 1,
+                "Accipiter": 4,
+                "Potenaur": 3,
+                "Direwolf": 6,
+                "Apexora": 1,
+                "Snow Fox": 8,
+                "Carno": 4,
+                "Snowy Rabbit": 10,
+                "Cow": 8,
+                "Dukkar": 2,
+                "Wild Bear": 8,
+                "Mane": 7,
+                "Pig": 9,
+                "Preado": 1,
+                "Yutyronus": 2,
+                "Horse": 2,
+                "Mountain Llama": 7,
+                "Ospreyer": 3,
+                "Goat": 8
+            },
+            "spawnRate": 9,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": -105 },
+                "MIDNIGHT": { "degrees": -120 },
+                "NOON": { "degrees": -85 },
+                "EVENING": { "degrees": -105 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 6
+        },
+        "Badlands": {
+            "icon": { "name": "Badlands", "material": "DEAD_BUSH" },
+            "mobs": {
+                "Buzzard": 2,
+                "Pardosa": 4,
+                "Mule": 1,
+                "Donkey": 1,
+                "Rabbit": 7,
+                "Cow": 5,
+                "Decrepit Husk": 5,
+                "Shambling Husk": 5
+            },
+            "spawnRate": 10,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 35 },
+                "MIDNIGHT": { "degrees": -55 },
+                "NOON": { "degrees": 125 },
+                "EVENING": { "degrees": 65 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 9
+        },
+        "Bayou": {
+            "icon": { "name": "Bayou", "material": "BROWN_CONCRETE_POWDER" },
+            "mobs": {
+                "Crocodile": 11,
+                "Chicken": 8,
+                "Decipio": 2,
+                "Brown Axolotl": 2,
+                "Swarmth": 12,
+                "Limus": 1,
+                "Dukkar": 2,
+                "Pig": 8,
+                "Pompeius": 2
+            },
+            "spawnRate": 8,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 15 },
+                "MIDNIGHT": { "degrees": -20 },
+                "NOON": { "degrees": 30 },
+                "EVENING": { "degrees": 10 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 37
+        },
+        "Warm Ocean": {
+            "icon": {
+                "name": "Warm Ocean",
+                "material": "LIGHT_BLUE_STAINED_GLASS"
+            },
+            "mobs": {
+                "Turtle": 4,
+                "Archaic Demi": 4,
+                "Tropical Fish 3": 7,
+                "Tropical Fish 2": 7,
+                "Dolphin": 2,
+                "Depthcharge": 4,
+                "Tropical Fish 1": 7,
+                "Shark": 4,
+                "Tropical Fish 4": 7,
+                "Squid": 3,
+                "Cod": 2,
+                "Axolotl": 5,
+                "Imum": 3
+            },
+            "spawnRate": 20,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 10 },
+                "MIDNIGHT": { "degrees": 5 },
+                "NOON": { "degrees": 30 },
+                "EVENING": { "degrees": 15 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 36
+        },
+        "Volcano Range": {
+            "icon": { "name": "Volcano Range", "material": "COAL_ORE" },
+            "mobs": {
+                "Aquila": 2,
+                "Potenaur": 5,
+                "Direwolf": 7,
+                "Apexora": 2,
+                "Carno": 6,
+                "Cow": 5,
+                "Wild Bear": 6,
+                "Mane": 8,
+                "Preado": 2,
+                "Allosaurus": 5,
+                "Mountain Llama": 4,
+                "Ospreyer": 3,
+                "Goat": 10
+            },
+            "spawnRate": 21,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": -65 },
+                "MIDNIGHT": { "degrees": -75 },
+                "NOON": { "degrees": -30 },
+                "EVENING": { "degrees": -40 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 17
+        },
+        "Rolling Rockies": {
+            "icon": { "name": "Rolling Rockies", "material": "GRAVEL" },
+            "mobs": {
+                "Mule": 2,
+                "Potenaur": 3,
+                "Direwolf": 3,
+                "Carno": 2,
+                "Rabbit": 5,
+                "Cow": 6,
+                "Fox": 3,
+                "Mane": 7,
+                "Wild Bear": 2,
+                "Horse": 2,
+                "Ospreyer": 4,
+                "Goat": 11,
+                "Chicken": 4
+            },
+            "spawnRate": 12,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": -10 },
+                "MIDNIGHT": { "degrees": -30 },
+                "NOON": { "degrees": -5 },
+                "EVENING": { "degrees": -15 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 45
+        },
+        "Tall Trees": {
+            "icon": { "name": "Tall Trees", "material": "SPRUCE_SAPLING" },
+            "mobs": {
+                "Accipiter": 4,
+                "Direwolf": 3,
+                "Rabbit": 7,
+                "Carno": 4,
+                "Cow": 5,
+                "Fox": 3,
+                "Mane": 4,
+                "Wild Bear": 2,
+                "Flike": 5,
+                "Microraptor": 2,
+                "Brooder Skilter": 1,
+                "Chicken": 7,
+                "Tarantula": 5
+            },
+            "spawnRate": 16,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 10 },
+                "MIDNIGHT": { "degrees": -25 },
+                "NOON": { "degrees": 20 },
+                "EVENING": { "degrees": -5 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 27
+        },
+        "Jungle": {
+            "icon": { "name": "Jungle", "material": "FLOWERING_AZALEA" },
+            "mobs": {
+                "Parrot": 6,
+                "Rabbit": 3,
+                "Wasp": 11,
+                "Mane": 2,
+                "Panda": 1,
+                "Flike": 3,
+                "Ocelot": 5,
+                "Bat": 4,
+                "Chicken": 5,
+                "Trilanops": 2,
+                "Dilopha": 3,
+                "Archops": 5,
+                "Tarantula": 2
+            },
+            "spawnRate": 22,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 35 },
+                "MIDNIGHT": { "degrees": 20 },
+                "NOON": { "degrees": 70 },
+                "EVENING": { "degrees": 60 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 2
+        },
+        "Cold Ocean": {
+            "icon": { "name": "Cold Ocean", "material": "PACKED_ICE" },
+            "mobs": {
+                "Archaic Demi": 4,
+                "Glowsquid": 7,
+                "Squid": 4,
+                "Shark": 6,
+                "Axolotl": 3,
+                "Imum": 4
+            },
+            "spawnRate": 9,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": -35 },
+                "MIDNIGHT": { "degrees": -75 },
+                "NOON": { "degrees": -30 },
+                "EVENING": { "degrees": -50 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 47
+        },
+        "Frozen River": {
+            "icon": { "name": "Frozen River", "material": "ICE" },
+            "mobs": {
+                "Glowsquid": 3,
+                "River Demi": 2,
+                "Squid": 3,
+                "Penguin": 1,
+                "Cod": 6,
+                "Axolotl": 1
+            },
+            "spawnRate": 6,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 0 },
+                "MIDNIGHT": { "degrees": 0 },
+                "NOON": { "degrees": 0 },
+                "EVENING": { "degrees": 0 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 48
+        },
+        "Forest": {
+            "icon": { "name": "Forest", "material": "OAK_SAPLING" },
+            "mobs": {
+                "Rabbit": 4,
+                "Carno": 1,
+                "Cow": 2,
+                "Fox": 4,
+                "Dukkar": 2,
+                "Mane": 6,
+                "Pig": 3,
+                "Flike": 6,
+                "Pouncing Widow": 6,
+                "Bat": 4,
+                "Chicken": 4,
+                "Dilopha": 1,
+                "Tarantula": 4
+            },
+            "spawnRate": 9,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 10 },
+                "MIDNIGHT": { "degrees": -5 },
+                "NOON": { "degrees": 30 },
+                "EVENING": { "degrees": 10 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 11
+        },
+        "Desert": {
+            "icon": { "name": "Desert", "material": "SAND" },
+            "mobs": {
+                "Buzzard": 3,
+                "Pardosa": 7,
+                "Donkey": 1,
+                "Rabbit": 8,
+                "Decrepit Husk": 4,
+                "Shambling Husk": 5
+            },
+            "spawnRate": 12,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 30 },
+                "MIDNIGHT": { "degrees": -55 },
+                "NOON": { "degrees": 90 },
+                "EVENING": { "degrees": 60 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 1
+        },
+        "Mossy Grove": {
+            "icon": { "name": "Mossy Grove", "material": "MOSS_BLOCK" },
+            "mobs": {
+                "Flike": 2,
+                "Ocelot": 2,
+                "Pouncing Widow": 1,
+                "Rabbit": 10,
+                "Chicken": 6,
+                "Fox": 6,
+                "Wasp": 2,
+                "Tarantula": 10,
+                "Mane": 6
+            },
+            "spawnRate": 12,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 15 },
+                "MIDNIGHT": { "degrees": 5 },
+                "NOON": { "degrees": 25 },
+                "EVENING": { "degrees": 15 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 44
+        },
+        "Bamboo Jungle": {
+            "icon": { "name": "Bamboo Jungle", "material": "BAMBOO" },
+            "mobs": {
+                "Parrot": 4,
+                "Rabbit": 5,
+                "Chicken": 5,
+                "Dilopha": 2,
+                "Wasp": 7,
+                "Fox": 3,
+                "Tarantula": 5,
+                "Mane": 4,
+                "Panda": 20
+            },
+            "spawnRate": 0,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 35 },
+                "MIDNIGHT": { "degrees": 20 },
+                "NOON": { "degrees": 70 },
+                "EVENING": { "degrees": 60 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 26
+        },
+        "Sunflower Field": {
+            "icon": { "name": "Sunflower Field", "material": "SUNFLOWER" },
+            "mobs": {},
+            "spawnRate": 8,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 25 },
+                "MIDNIGHT": { "degrees": -10 },
+                "NOON": { "degrees": 28 },
+                "EVENING": { "degrees": 15 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 32
+        },
+        "Savanna": {
+            "icon": { "name": "Savanna", "material": "ACACIA_SAPLING" },
+            "mobs": {},
+            "spawnRate": 0,
+            "dailyTemperatures": {
+                "MORNING": { "degrees": 0 },
+                "MIDNIGHT": { "degrees": 0 },
+                "NOON": { "degrees": 0 },
+                "EVENING": { "degrees": 0 }
+            },
+            "windInfo": { "kphMin": 0, "kphMax": 0 },
+            "biomeUid": 28
+        }
+    },
+    "biomeKeyToName": {
+        "minecraft:giant_tree_taiga_hills": "Tall Trees",
+        "minecraft:frozen_ocean": "Icebergs",
+        "minecraft:savanna_plateau": "Badlands",
+        "minecraft:taiga_hills": "Spruce Forest",
+        "minecraft:taiga": "Spruce Forest",
+        "minecraft:wooded_mountains": "Douglas Fir",
+        "minecraft:savanna": "Wastefield",
+        "minecraft:swamp": "Marshland",
+        "minecraft:giant_tree_taiga": "Redwood",
+        "minecraft:bamboo_jungle": "Bamboo Jungle",
+        "minecraft:plains": "Central Plains",
+        "minecraft:ice_spikes": "Ice Spikes",
+        "minecraft:desert_hills": "Rocky Hills",
+        "minecraft:birch_forest_hills": "Cursed Ridge",
+        "minecraft:dark_forest": "Roofed Forest",
+        "minecraft:badlands_plateau": "Badlands",
+        "minecraft:snowy_tundra": "Snowy Mountains",
+        "minecraft:frozen_river": "Frozen River",
+        "minecraft:lukewarm_ocean": "Warm Ocean",
+        "minecraft:warm_ocean": "Warm Ocean",
+        "minecraft:forest": "Forest",
+        "minecraft:deep_ocean": "Base Ocean",
+        "minecraft:jungle": "Jungle",
+        "minecraft:ocean": "Base Ocean",
+        "minecraft:mountains": "Volcano Range",
+        "minecraft:nether_wastes": "Volcano Caldera",
+        "minecraft:cold_ocean": "Cold Ocean",
+        "minecraft:snowy_taiga": "Snowy Mountains",
+        "minecraft:desert": "Desert",
+        "biomes:autumn1": "testBiome",
+        "minecraft:beach": "Beach",
+        "minecraft:badlands": "Badlands",
+        "minecraft:mountain_edge": "Rolling Rockies",
+        "minecraft:river": "River",
+        "minecraft:wooded_badlands_plateau": "Badlands",
+        "minecraft:wooded_hills": "Southern Plains"
+    }
+}

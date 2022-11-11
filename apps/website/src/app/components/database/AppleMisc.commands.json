@@ -1,0 +1,102 @@
+[
+    {
+        "name": "warp",
+        "description": "tp to different points of interest",
+        "subCommands": {
+            "tp": {},
+            "set": {},
+            "remove": {},
+            "private": {
+                "tp": {},
+                "set": {},
+                "remove": {}
+            }
+        }
+    },
+    {
+        "name": "back",
+        "description": "Go back to previous locations that you have teleported to",
+        "subCommands": {
+            "forward": {},
+            "clear all": {},
+            "clear one": {}
+        }
+    },
+    {
+        "name": "forward",
+        "description": "Go forward locations that did /back from"
+    },
+    {
+        "name": "flyspeed",
+        "description": "change your flyspeed"
+    },
+    {
+        "name": "item_modify",
+        "description": "rename or relore items",
+        "subCommands": {
+            "relore": {},
+            "rename": {}
+        }
+    },
+    {
+        "name": "repair",
+        "description": "Repairs the item in your hand or your entire inventory",
+        "subCommands": {
+            "percentage": {},
+            "full": {},
+            "raw": {},
+            "inventory": {}
+        }
+    },
+    {
+        "name": "listen_to_commands",
+        "description": "Start listening to commands to be able to then list all outputting command blocks",
+        "subCommands": {
+            "list": {},
+            "set_enabled": {}
+        }
+    },
+    {
+        "name": "snowtool",
+        "description": "Use a wand to smooth large landscapes of snow layers",
+        "subCommands": {
+            "give": {},
+            "radius": {},
+            "force": {},
+            "mode": {
+                "add": "",
+                "remove": "",
+                "smooth": ""
+            }
+        }
+    },
+    {
+        "name": "join",
+        "description": "Teleport to a spawn on the main world.",
+        "subCommands": {
+            "edit": {
+                "description": "Edit the spawning choices of players",
+                "boxspawn": {},
+                "gui": {},
+                "mainworld": {}
+            }
+        }
+    },
+    {
+        "name": "loottable",
+        "description": "Edit xp loottables for mobs or open a gui to edit block loottables",
+        "subCommands": {
+            "block": {},
+            "xp": {
+                "bytag": {
+                    "get": {},
+                    "set": {}
+                },
+                "bytype": {
+                    "get": {},
+                    "set": {}
+                }
+            }
+        }
+    }
+]
