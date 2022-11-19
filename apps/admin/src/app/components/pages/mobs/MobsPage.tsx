@@ -1,13 +1,11 @@
+import { AppTypography, Page } from '@app/ui';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import DifferenceIcon from '@mui/icons-material/Difference';
 import EditIcon from '@mui/icons-material/Edit';
-import { Autocomplete, Button, Stack, TextField } from '@mui/material';
+import { Button, Stack } from '@mui/material';
 import { useState } from 'react';
 
-import { AppTypography } from '../../base/AppTypography';
-import { Page } from '../../common/Page';
-import { useBiomeList } from '../biomes/Biomes.store';
-import { Mob, MobListFilter, useMobList, useMobMap } from './Mobs.store';
+import { Mob, MobListFilter, useMobList } from './Mobs.store';
 import { MobsFilter } from './MobsFilter';
 
 function MobElement(props: Mob) {

@@ -1,14 +1,12 @@
-import { Box, Divider, Input, Stack, TextField } from '@mui/material';
-import { TreeItem, TreeView } from '@mui/lab';
-import { AppTypography } from '../../base/AppTypography';
-import { Page } from '../../common/Page';
-import { Command, useCommandList } from './Commands.store';
+import { AppTypography, Page } from '@app/ui';
 import { ChevronRight, Search } from '@mui/icons-material';
-import { ChangeEventHandler, EventHandler, useState } from 'react';
-import App from '../../../App';
+import { TreeItem, TreeView } from '@mui/lab';
+import { Divider, Stack, TextField } from '@mui/material';
+import { ChangeEventHandler, useState } from 'react';
+
+import { Command, useCommandList } from './Commands.store';
 
 function CommandElement(props: Command) {
-    console.log(props.subCommands);
     return (
         <Stack>
             <Stack direction="row">

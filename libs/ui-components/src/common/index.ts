@@ -1,3 +1,3 @@
-export * from './AppHeader';
+export * from './Header';
 export * from './Page';
 export * from './Logo';
