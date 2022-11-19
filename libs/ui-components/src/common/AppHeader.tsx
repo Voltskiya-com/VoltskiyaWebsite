@@ -1,13 +1,16 @@
-import { AppBar, Box, Button, Divider, Link, Stack } from '@mui/material';
+import {
+    AppBar,
+    Box,
+    Button,
+    Color,
+    Divider,
+    Link,
+    Stack,
+} from '@mui/material';
 
-import { urls } from '../../util/routes';
 import { AppTypography } from '../base/AppTypography';
 import { Logo } from './Logo';
 
-interface AppLinkProps {
-    route: string;
-    title: string;
-}
 function AppLink(props: AppLinkProps) {
     const color =
         location.pathname === props.route ? 'text.secondary' : 'text.primary';
@@ -19,21 +22,35 @@ function AppLink(props: AppLinkProps) {
         </Button>
     );
 }
-
-export function AppHeader() {
-    const appBarColor = '#333333';
+export interface AppLinkProps {
+    route: string;
+    title: string;
+}
+export interface AppHeaderProps {
+    home: AppLinkProps;
+    links: AppLinkProps[];
+    bgcolor: string;
+    logo: string;
+}
+export function AppHeader(props: AppHeaderProps) {
     return (
         <Stack marginBottom={3}>
             <AppBar
                 position="static"
                 sx={{
                     height: '4rem',
-                    bgcolor: appBarColor,
+                    bgcolor: props.bgcolor,
                     zIndex: (theme) => theme.zIndex.appBar,
                 }}
             >
                 <Stack direction="row">
-                    <Logo />
+                    <Box height="4rem" width="7.5rem">
+                        <Logo
+                            size="7.5rem"
+                            href={props.home.route}
+                            img={props.logo}
+                        />
+                    </Box>
                     <Stack
                         justifyContent="flex-start"
                         spacing={4}
@@ -47,9 +64,9 @@ export function AppHeader() {
                             />
                         }
                     >
-                        <AppLink route={urls.home} title="Home" />
-                        <AppLink route={urls.commands} title="Commands" />
-                        <AppLink route={urls.mobs} title="Mobs" />
+                        {props.links.map((link) => (
+                            <AppLink key={link.route} {...link} />
+                        ))}
                     </Stack>
                 </Stack>
             </AppBar>
@@ -57,7 +74,7 @@ export function AppHeader() {
                 alignSelf="start"
                 height="auto"
                 width="auto"
-                bgcolor={appBarColor}
+                bgcolor={props.bgcolor}
                 zIndex={(theme) => theme.zIndex.appBar - 1000}
                 sx={{ transform: 'perspective(10px) rotateX(-1deg)' }}
                 paddingLeft="2.5rem"
@@ -65,7 +82,7 @@ export function AppHeader() {
                 paddingBottom={1}
                 marginLeft="7.5rem"
             >
-                <Link href={urls.home} color="secondary">
+                <Link href={props.home.route} color="secondary">
                     <AppTypography
                         fontWeight={500}
                         sx={{
@@ -75,7 +92,7 @@ export function AppHeader() {
                         variant="h3"
                         noWrap
                     >
-                        Voltskiya
+                        {props.home.title}
                     </AppTypography>
                 </Link>
             </Box>

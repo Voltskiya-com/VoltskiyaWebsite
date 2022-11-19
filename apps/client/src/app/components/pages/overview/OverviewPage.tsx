@@ -1,9 +1,6 @@
-import { Page } from '../../common/Page';
-import { AppPaper } from '../../base/AppPaper';
-import { AppTypography } from '../../base/AppTypography';
-import { Box, Stack } from '@mui/material';
+import { AppPaper, AppTypography, Page } from '@app/ui';
+import { Stack } from '@mui/material';
 import { ReactNode } from 'react';
-import { FormatQuote } from '@mui/icons-material';
 
 interface OverviewSectionProps {
     title: string;
@@ -24,28 +21,6 @@ function OverviewSection(props: OverviewSectionProps) {
                 {props.summary}
             </Stack>
         </AppPaper>
-    );
-}
-interface QuoteProps {
-    children: ReactNode;
-    color: string;
-    quoteSize: 'inherit' | 'large' | 'medium' | 'small';
-}
-function Quote(props: QuoteProps) {
-    return (
-        <Stack
-            color={props.color}
-            direction="row"
-            justifyContent="space-evenly"
-        >
-            <Box alignSelf="start">
-                <FormatQuote fontSize={props.quoteSize} />
-            </Box>
-            {props.children}
-            <Box alignSelf="end">
-                <FormatQuote fontSize={props.quoteSize} />
-            </Box>
-        </Stack>
     );
 }
 export function OverviewPage() {
