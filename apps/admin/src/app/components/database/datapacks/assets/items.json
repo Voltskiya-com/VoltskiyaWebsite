@@ -1,0 +1,54 @@
+{
+    "minecraft:block/command_block": {
+        "blood_catalyst": {
+            "predicate": { "custom_model_data": 1 },
+            "model": "voltskiya/items/blood_catalyst"
+        },
+        "ice_catalyst": {
+            "predicate": { "custom_model_data": 2 },
+            "model": "voltskiya/items/ice_catalyst"
+        },
+        "oozing_fermented_spider_eye": {
+            "predicate": { "custom_model_data": 3 },
+            "model": "voltskiya/items/oozing_fermented_spider_eye"
+        },
+        "ethiril_ingot": {
+            "predicate": { "custom_model_data": 4 },
+            "model": "voltskiya/items/ethiril_ingot"
+        }
+    },
+    "minecraft:item/iron_sword": {
+        "iron_greatsword": {
+            "predicate": { "custom_model_data": 4001 },
+            "model": "voltskiya/items/iron_greatsword"
+        }
+    },
+    "minecraft:item/oil_bucket": {
+        "oil_bucket": {
+            "predicate": { "custom_model_data": 3000 },
+            "model": "voltskiya/items/oil_bucket"
+        }
+    },
+    "minecraft:item/netherite_sword": {
+        "ethiril_sword": {
+            "predicate": {
+                "custom_model_data": 4000
+            },
+            "model": "voltskiya/items/ethiril_sword"
+        },
+        "ethiril_trident": {
+            "predicate": {
+                "custom_model_data": 4002
+            },
+            "model": "voltskiya/items/ethiril_trident"
+        }
+    },
+    "minecraft:potion": {
+        "canteen": {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "voltskiya/items/canteen"
+        }
+    }
+}

@@ -1,5 +1,4 @@
 import { TextField, TextFieldProps, useTheme } from '@mui/material';
-import { green } from '@mui/material/colors';
 import { forwardRef } from 'react';
 
 function AppInputBase(props: TextFieldProps, ref: any) {
@@ -20,7 +19,6 @@ function AppInputBase(props: TextFieldProps, ref: any) {
                 },
 
                 input: {
-                    color: green[400],
                     '::placeholder': { color: 'secondary.contrastText' },
                     fontSize: 20,
                 },

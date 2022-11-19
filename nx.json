@@ -23,5 +23,5 @@
             "dependsOn": ["^build"]
         }
     },
-    "defaultProject": "website"
+    "defaultProject": "admin"
 }

@@ -8,7 +8,7 @@ import {
 import fuzzysort from 'fuzzysort';
 import { map } from 'rxjs';
 
-import mobsRaw from '../../database/mobsDb2.json';
+import mobsRaw from '../../database/mobs/gm/mobsDb2.json';
 import { biomesStore } from '../biomes/Biomes.store';
 
 export interface Mob {

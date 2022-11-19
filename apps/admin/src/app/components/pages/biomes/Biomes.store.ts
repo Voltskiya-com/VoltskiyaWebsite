@@ -2,7 +2,7 @@ import { useObservableMemo } from '@appleptr16/elemental';
 import { createStore } from '@ngneat/elf';
 import { selectAllEntities, withEntities } from '@ngneat/elf-entities';
 
-import biomesRaw from '../../database/biomes.json';
+import biomesRaw from '../../database/biomes/biomes.json';
 
 const biomes: Biome[] = Object.entries(biomesRaw.biomesByName).map(
     ([name, biome]) => ({

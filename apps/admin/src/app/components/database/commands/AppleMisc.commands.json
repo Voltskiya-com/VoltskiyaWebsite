@@ -13,6 +13,7 @@
             }
         }
     },
+
     {
         "name": "back",
         "description": "Go back to previous locations that you have teleported to",
@@ -98,5 +99,13 @@
                 }
             }
         }
+    },
+    {
+        "name": "pr",
+        "description": "command alias for /bukkit:reload"
+    },
+    {
+        "name": "dr",
+        "description": "command alias for /minecraft:reload"
     }
 ]

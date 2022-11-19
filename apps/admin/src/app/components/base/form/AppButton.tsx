@@ -1,5 +1,4 @@
 import { Button, ButtonProps, Theme, Typography } from '@mui/material';
-import { common } from '@mui/material/colors';
 import { AppTypography } from '../AppTypography';
 
 export type AppButtonProps = ButtonProps;

@@ -10,7 +10,7 @@ interface AppLinkProps {
 }
 function AppLink(props: AppLinkProps) {
     const color =
-        location.pathname === props.route ? 'text.primary' : 'text.secondary';
+        location.pathname === props.route ? 'text.secondary' : 'text.primary';
     return (
         <Button variant="text" color="secondary" href={props.route}>
             <AppTypography color={color} variant="h4">

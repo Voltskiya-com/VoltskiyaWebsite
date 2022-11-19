@@ -1,0 +1,45 @@
+{
+    "fire_fangs.basic": {},
+    "fire_fangs.triple": {},
+    "fire_fangs.triple_straight": {},
+    "fire_fangs.basic.blue": {},
+    "fire_fangs.triple.blue": {},
+    "fire_fangs.triple_straight.blue": {},
+
+    "reviver": {
+        "works": null
+    },
+
+    "missile_laser.normal": {},
+    "missile_laser.overseer": {},
+    "mancubus.basic": { "works": true },
+    "fireball.basic": { "works": true },
+    "fireball.rapid": { "works": true },
+
+    "orbital_strike.small": {
+        "works": true,
+        "configUpdated": false
+    },
+    "orbital_strike.medium": {
+        "works": true,
+        "configUpdated": false
+    },
+    "orbital_strike.large": {
+        "works": true,
+        "configUpdated": false
+    },
+
+    "ShootBallManager": {
+        "fireball_laser": {},
+        "shoot_ball": {},
+        "overseer_boss": {},
+        "passed": true,
+        "status": "need to upgrade"
+    },
+    "MicroMissileShooter": {
+        "micro_missiles": {},
+        "works": true,
+        "status": "need to upgrade"
+    },
+    "DelayPathfinding": "Not done"
+}

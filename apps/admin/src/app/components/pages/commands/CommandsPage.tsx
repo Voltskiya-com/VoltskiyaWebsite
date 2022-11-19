@@ -1,9 +1,11 @@
-import { Divider, Stack } from '@mui/material';
+import { Box, Divider, Input, Stack, TextField } from '@mui/material';
 import { TreeItem, TreeView } from '@mui/lab';
 import { AppTypography } from '../../base/AppTypography';
 import { Page } from '../../common/Page';
 import { Command, useCommandList } from './Commands.store';
-import { ChevronRight } from '@mui/icons-material';
+import { ChevronRight, Search } from '@mui/icons-material';
+import { ChangeEventHandler, EventHandler, useState } from 'react';
+import App from '../../../App';
 
 function CommandElement(props: Command) {
     console.log(props.subCommands);
@@ -21,9 +23,31 @@ function CommandElement(props: Command) {
     );
 }
 export function CommandsPage() {
-    const commands: Command[] = useCommandList();
+    const [filter, setFilter] = useState<string>('');
+    const filterUpdate: ChangeEventHandler<HTMLInputElement> = (event) =>
+        setFilter(event.currentTarget.value);
+    const commands: Command[] = useCommandList().filter((command) =>
+        command.name.includes(filter)
+    );
+    const filterElement = (
+        <Stack direction="row" alignItems="center">
+            <TextField
+                variant="filled"
+                label={'Filter'}
+                onChange={filterUpdate}
+            />
+            <Search
+                sx={{
+                    scale: '-1 1',
+                    left: -50,
+                    position: 'relative',
+                }}
+                fontSize="large"
+            />
+        </Stack>
+    );
     return (
-        <Page title="Commands">
+        <Page title="Commands" extra={filterElement}>
             <Stack spacing={1} divider={<Divider light />}>
                 <TreeView
                     sx={{

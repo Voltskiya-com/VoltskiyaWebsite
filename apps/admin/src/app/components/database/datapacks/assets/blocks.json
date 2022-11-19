@@ -1,0 +1,14 @@
+{
+    "minecraft:block/petrified_oak_slab": {
+        "black": {
+            "predicate": {},
+            "model": "voltskiya/block/black"
+        }
+    },
+    "minecraft:item/stone_button": {
+        "tropicalshark": {
+            "predicate": { "custom_model_data": 58001 },
+            "model": "voltskiya/mob/hostile/tropicalshark"
+        }
+    }
+}

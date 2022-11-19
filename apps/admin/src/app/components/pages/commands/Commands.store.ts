@@ -2,7 +2,7 @@ import { useObservableMemo } from '@appleptr16/elemental';
 import { createStore } from '@ngneat/elf';
 import { selectAllEntities, withEntities } from '@ngneat/elf-entities';
 import { map } from 'rxjs';
-import commandsRaw from '../../database/AppleMisc.commands.json';
+import commandsRaw from '../../database/commands/AppleMisc.commands.json';
 
 export interface Command {
     name: string;
