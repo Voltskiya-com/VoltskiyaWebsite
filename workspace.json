@@ -2,6 +2,7 @@
     "version": 2,
     "projects": {
         "admin": "apps/admin",
-        "client": "apps/client"
+        "client": "apps/client",
+        "ui-components": "libs/ui-components"
     }
 }

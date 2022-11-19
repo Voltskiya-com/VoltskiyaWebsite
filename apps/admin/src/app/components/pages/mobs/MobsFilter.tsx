@@ -1,12 +1,7 @@
-import { Autocomplete, Box, TextField } from '@mui/material';
-import { Stack } from '@mui/material';
-import {
-    ChangeEvent,
-    ChangeEventHandler,
-    FormEvent,
-    FormEventHandler,
-} from 'react';
-import { AppTypography } from '../../base/AppTypography';
+import { AppTypography } from '@app/ui';
+import { Autocomplete, Stack, TextField } from '@mui/material';
+import { ChangeEventHandler } from 'react';
+
 import { useBiomeList } from '../biomes/Biomes.store';
 import { MobListFilter, useMobMap } from './Mobs.store';
 
