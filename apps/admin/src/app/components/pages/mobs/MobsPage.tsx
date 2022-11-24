@@ -1,48 +1,26 @@
-import { AppTypography, Page } from '@app/ui';
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import DifferenceIcon from '@mui/icons-material/Difference';
-import EditIcon from '@mui/icons-material/Edit';
-import { Button, Stack } from '@mui/material';
+import { Page, Search } from '@app/ui';
+import { Masonry } from '@mui/lab';
+import { Stack } from '@mui/material';
 import { useState } from 'react';
 
-import { Mob, MobListFilter, useMobList } from './Mobs.store';
-import { MobsFilter } from './MobsFilter';
-
-function MobElement(props: Mob) {
-    return (
-        <Stack
-            justifyContent="space-between"
-            direction="row"
-            bgcolor={(theme) => theme.palette.grey[800]}
-        >
-            <Stack direction="row">
-                <Button>
-                    <AppTypography>{props.name}</AppTypography>
-                </Button>
-            </Stack>
-            <Stack direction="row" spacing={1}>
-                <ContentCopyIcon />
-                <DifferenceIcon />
-                <EditIcon />
-            </Stack>
-        </Stack>
-    );
-}
+import { Mob } from '../../database/mobs/MapJsonMobs';
+import { MobElement } from './Mob';
+import { MobListFilter, useMobList } from './Mobs.store';
 
 export function MobsPage() {
     const [filter, setFilter] = useState<MobListFilter>({ name: '' });
     const updateFilter = (part: Partial<MobListFilter>) =>
         setFilter({ ...filter, ...part });
+    const setFilterName = (value: string) => updateFilter({ name: value });
     const mobs: Mob[] = useMobList(filter);
     return (
-        <Page title="Mobs">
+        <Page title="Mobs" extra={<Search onChange={setFilterName} />}>
             <Stack direction="row">
-                <MobsFilter filter={filter} updateFilter={updateFilter} />
-                <Stack spacing={1}>
+                <Masonry spacing={5}>
                     {mobs.map((mob: Mob) => (
                         <MobElement key={mob.name} {...mob} />
                     ))}
-                </Stack>
+                </Masonry>
             </Stack>
         </Page>
     );

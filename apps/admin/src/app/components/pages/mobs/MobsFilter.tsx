@@ -3,7 +3,7 @@ import { Autocomplete, Stack, TextField } from '@mui/material';
 import { ChangeEventHandler } from 'react';
 
 import { useBiomeList } from '../biomes/Biomes.store';
-import { MobListFilter, useMobMap } from './Mobs.store';
+import { MobListFilter } from './Mobs.store';
 
 export interface MobsFilterProps {
     filter: MobListFilter;
@@ -11,7 +11,6 @@ export interface MobsFilterProps {
 }
 
 export function MobsFilter(props: MobsFilterProps) {
-    const mobNames: string[] = useMobMap('name');
     const biomes: string[] = useBiomeList().map((biome) => biome.name);
     const updateMobName: ChangeEventHandler<HTMLTextAreaElement> = (event) => {
         props.updateFilter({ name: event.target.value });

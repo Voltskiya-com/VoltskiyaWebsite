@@ -2,6 +2,7 @@ import { useObservableMemo } from '@appleptr16/elemental';
 import { createStore } from '@ngneat/elf';
 import { selectAllEntities, withEntities } from '@ngneat/elf-entities';
 import { map } from 'rxjs';
+import { sortOnKey } from '../../../util/sortOnKey';
 import commandsRaw from '../../database/commands/AppleMisc.commands.json';
 
 export interface Command {
@@ -16,16 +17,14 @@ export const commandsStore = createStore(
         initialValue: commandsRaw as Command[],
     })
 );
-export function useCommandList(): Command[] {
+export function useCommandList(filter: string): Command[] {
     return useObservableMemo(
         () =>
             commandsStore.pipe(
                 selectAllEntities(),
-                map((entities) =>
-                    entities.sort((e1, e2) => e1.name.localeCompare(e2.name))
-                )
+                map((commands) => sortOnKey(commands, 'name', filter))
             ),
-        [commandsStore],
+        [commandsStore, filter],
         []
     );
 }
