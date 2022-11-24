@@ -1,45 +1,43 @@
 {
-    "fire_fangs.basic": {},
-    "fire_fangs.triple": {},
-    "fire_fangs.triple_straight": {},
-    "fire_fangs.basic.blue": {},
-    "fire_fangs.triple.blue": {},
-    "fire_fangs.triple_straight.blue": {},
-
+    "micro_missiles": {
+        "micro_missiles": {}
+    },
+    "warper": {
+        "warper": {}
+    },
+    "blemish_gateway": {
+        "notes": "The particles around the blemish don't work",
+        "blemish_gateway": {}
+    },
     "reviver": {
-        "works": null
+        "reviver.basic": {},
+        "reviver.pulse": {}
     },
-
-    "missile_laser.normal": {},
-    "missile_laser.overseer": {},
-    "mancubus.basic": { "works": true },
-    "fireball.basic": { "works": true },
-    "fireball.rapid": { "works": true },
-
-    "orbital_strike.small": {
-        "works": true,
-        "configUpdated": false
+    "firefangs": {
+        "fire_fangs.basic": {},
+        "fire_fangs.triple": {},
+        "fire_fangs.triple_straight": {},
+        "fire_fangs.basic.blue": {},
+        "fire_fangs.triple.blue": {},
+        "fire_fangs.triple_straight.blue": {}
     },
-    "orbital_strike.medium": {
-        "works": true,
-        "configUpdated": false
+    "missile_laser": {
+        "missile_laser.normal": {},
+        "missile_laser.overseer": {}
     },
-    "orbital_strike.large": {
-        "works": true,
-        "configUpdated": false
+    "mancubus": {
+        "mancubus.basic": {}
     },
-
-    "ShootBallManager": {
-        "fireball_laser": {},
-        "shoot_ball": {},
-        "overseer_boss": {},
-        "passed": true,
-        "status": "need to upgrade"
+    "fireball": {
+        "fireball.basic": {},
+        "fireball.rapid": {}
     },
-    "MicroMissileShooter": {
-        "micro_missiles": {},
-        "works": true,
-        "status": "need to upgrade"
+    "orbital_strike": {
+        "configUpdated": false,
+        "orbital_strike.small": {},
+        "orbital_strike.medium": {},
+        "orbital_strike.large": {}
     },
+    "leaps": "Not done",
     "DelayPathfinding": "Not done"
 }
