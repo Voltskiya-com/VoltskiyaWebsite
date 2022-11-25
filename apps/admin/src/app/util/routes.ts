@@ -2,8 +2,6 @@ export const urls = {
     home: '/',
     commands: '/commands',
     mobs: '/mobs',
+    login: '/login',
 };
 export const nav = {};
-export function navPathTo(url: string) {
-    location.pathname = url;
-}

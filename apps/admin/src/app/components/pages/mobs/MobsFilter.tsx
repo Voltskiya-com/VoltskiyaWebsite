@@ -1,40 +1,38 @@
-import { AppTypography } from '@app/ui';
-import { Autocomplete, Stack, TextField } from '@mui/material';
-import { ChangeEventHandler } from 'react';
+import { Search } from '@app/ui';
+import { Chip, Stack } from '@mui/material';
+import { Dispatch, SetStateAction } from 'react';
 
-import { useBiomeList } from '../biomes/Biomes.store';
-import { MobListFilter } from './Mobs.store';
+import { MobListFilter, useMobCategories } from './Mobs.store';
 
 export interface MobsFilterProps {
-    filter: MobListFilter;
-    updateFilter: (filter: Partial<MobListFilter>) => void;
+    setFilter: Dispatch<SetStateAction<MobListFilter>>;
 }
 
 export function MobsFilter(props: MobsFilterProps) {
-    const biomes: string[] = useBiomeList().map((biome) => biome.name);
-    const updateMobName: ChangeEventHandler<HTMLTextAreaElement> = (event) => {
-        props.updateFilter({ name: event.target.value });
-    };
+    const setFilterName: (name: string) => void = (name: string) =>
+        props.setFilter((filter: MobListFilter) => ({ ...filter, name }));
+
+    const toggleFilterTag: (tag: string) => void = (category: string) =>
+        props.setFilter((filter: MobListFilter) => {
+            const tagIndex: number = filter.categories.indexOf(category);
+            if (tagIndex >= 0) filter.categories.splice(tagIndex, 1);
+            else filter.categories.push(category);
+            return { ...filter };
+        });
+
+    const categories: string[] = useMobCategories();
     return (
         <Stack>
-            <TextField label="Name" onChange={updateMobName} />
-            <Autocomplete
-                color="primary"
-                renderInput={(params) => (
-                    <TextField {...params} label="Biome" />
-                )}
-                sx={{ width: 300 }}
-                renderOption={(props, option) => (
-                    <AppTypography
-                        {...props}
-                        bgcolor={(theme) => theme.palette.grey[600]}
-                        color={'contrastText.primary'}
-                    >
-                        {option}
-                    </AppTypography>
-                )}
-                options={biomes}
-            />
+            <Search onChange={setFilterName} />
+            <Stack>
+                {categories.map((category) => (
+                    <Chip
+                        key={category}
+                        onClick={() => toggleFilterTag(category)}
+                        label={category}
+                    />
+                ))}
+            </Stack>
         </Stack>
     );
 }

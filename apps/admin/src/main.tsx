@@ -10,10 +10,12 @@ import { defaultTheme } from './app/util/appTheme';
 import { enableElfProdMode } from '@ngneat/elf';
 import { environment } from './environments/environment';
 import { AppHeader } from './app/AppHeader';
+import { RouteRules } from './app/util/RouteRules';
 
 render(
     <StrictMode>
         <ThemeProvider theme={defaultTheme}>
+            <RouteRules />
             <CssBaseline />
             <Stack
                 direction="column"
