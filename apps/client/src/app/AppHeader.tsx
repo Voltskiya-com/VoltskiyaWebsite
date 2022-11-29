@@ -13,6 +13,8 @@ export function AppHeader() {
                 { route: '/', title: 'Home' },
                 { route: '/commands', title: 'Commands' },
                 { route: '/mobs', title: 'Mobs' },
+                { route: 'https://gm.voltskiya.com', title: '/gm' },
+                { route: 'https://api.voltskiya.com', title: '/api' },
             ]}
             bgcolor={bgcolor}
             logo={logo}

@@ -27,7 +27,7 @@ export function MobsPage() {
     let mobs: Mob[] = useMobList(filter);
     mobs = filterMobs(mobs, filter);
     return (
-        <Page title="Mobs" extra={<MobsFilter setFilter={setFilter} />}>
+        <Page title="Mobs" extra={<MobsFilter filter={filter} setFilter={setFilter} />}>
             <Stack direction="row">
                 <Masonry spacing={5}>
                     {mobs.map((mob: Mob) => (

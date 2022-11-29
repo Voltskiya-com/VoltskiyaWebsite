@@ -1,0 +1,1850 @@
+[
+    {
+        "name": "Parrot",
+        "gamemaster": {
+            "spawnEgg": "PARROT_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:parrot_spawn_egg\",tag:{EntityTag:{id:\"minecraft:parrot\"},display:{Name:'{\"text\":\"Parrot\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 77,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [3, 5]
+            }
+        }
+    },
+    {
+        "name": "Ocelot",
+        "gamemaster": {
+            "spawnEgg": "OCELOT_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:ocelot_spawn_egg\",tag:{EntityTag:{id:\"minecraft:ocelot\"},display:{Name:'{\"text\":\"Ocelot\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [3, 5]
+            }
+        }
+    },
+    {
+        "name": "Chicken",
+        "gamemaster": {
+            "spawnEgg": "CHICKEN_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:chicken_spawn_egg\",tag:{EntityTag:{id:\"minecraft:chicken\"},display:{Name:'{\"text\":\"Chicken\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Rabbit",
+        "gamemaster": {
+            "spawnEgg": "RABBIT_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:rabbit_spawn_egg\",tag:{EntityTag:{id:\"minecraft:rabbit\"},display:{Name:'{\"text\":\"Rabbit\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [2, 3, 4]
+            }
+        }
+    },
+    {
+        "name": "Wasp",
+        "gamemaster": {
+            "spawnEgg": "BEE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:bee_spawn_egg\",tag:{EntityTag:{Age:-9999999,AngerTime:99999,CustomName:'{\"text\":\"Wasp\",\"color\":\"gray\"}',Tags:[\"mob.wasp\"],id:\"minecraft:bee\"},display:{Name:'{\"text\":\"Wasp\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 2, 4]
+            }
+        }
+    },
+    {
+        "name": "Accipiter",
+        "gamemaster": {
+            "spawnEgg": "SKELETON_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:skeleton_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:5177344}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:5177344}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:5177344}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-373058805,17844094,-1714513217,1462267419],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA1ODM4ZjAyMDA4MjViYzJiMGY0Y2ZlMjUyNzRkNDhiZmVhOTM1OTlmNTZiMjBiOTRhNTc0ODU1ZjQ3MGZiMyJ9fX0=\"}]}}}}],Attributes:[{Base:60,Name:\"generic.max_health\"},{Base:18,Name:\"generic.follow_range\"},{Base:3,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"Accipiter\",\"color\":\"gray\"}',DeathLootTable:\"none\",HandDropChances:[0.0f,0.0f],HandItems:[{Count:1b,id:\"minecraft:wooden_axe\"},{Count:1b,id:\"minecraft:wooden_axe\"}],Health:60.0f,Tags:[\"mob.accipiter\",\"pounce_leap\",\"pounce_leap_up\"],id:\"minecraft:skeleton\"},display:{Name:'{\"text\":\"Accipiter\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 2, 1]
+            }
+        }
+    },
+    {
+        "name": "Insidie",
+        "gamemaster": {
+            "spawnEgg": "DROWNED_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:drowned_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:4410196}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:5990259}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:6780290}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;1508384376,1992836431,-1745053897,-1856220320],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNjMGYxMjVhNWJiMDE4MGU3ZjIwNjQ2NjVjZDVlNWExNDk4ZWZlZTgxNTgwMWZhMDRmZDhiYjM1MWQ4YzExMyJ9fX0=\"}]}}}}],Attributes:[{Base:100,Name:\"generic.max_health\"},{Base:0.8d,Name:\"generic.knockback_resistance\"},{Base:0.6d,Name:\"generic.movement_speed\"},{Base:9,Name:\"generic.attack_damage\"},{Base:2,Name:\"generic.attack_knockback\"},{Base:0,Name:\"zombie.spawn_reinforcements\"}],CustomName:'{\"text\":\"Insidie\",\"color\":\"gray\"}',Health:100.0f,IsBaby:0b,Silent:1b,Tags:[\"mob.insidie\",\"ai.waterbound\"],id:\"minecraft:drowned\"},display:{Name:'{\"text\":\"Insidie\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": true,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 80,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 0, 0]
+            }
+        }
+    },
+    {
+        "name": "Wild Lion",
+        "gamemaster": {
+            "spawnEgg": "HUSK_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:husk_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:11377005}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:11377005}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:11377005}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-1062080809,1601128628,-2086522730,-1571975112],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDQ3MWE3YWU3MDVjZTRmNTNkM2EzZTFjOWE4ZTc1YmNkNWFiYjNlYzlmOTJlMDUxNzE2NTQ1OTQ4MTQ4MGE2In19fQ==\"}]}}}}],Attributes:[{Base:85,Name:\"generic.max_health\"},{Base:20,Name:\"generic.follow_range\"},{Base:0.6d,Name:\"generic.knockback_resistance\"},{Base:0.4d,Name:\"generic.movement_speed\"},{Base:2,Name:\"generic.attack_knockback\"},{Base:0,Name:\"zombie.spawn_reinforcements\"}],CustomName:'{\"text\":\"Wild Lion\",\"color\":\"gray\"}',Health:85.0f,IsBaby:0b,Silent:1b,Tags:[\"mob.wild_lion\",\"base.deathtime\"],id:\"minecraft:husk\"},display:{Name:'{\"text\":\"Wild Lion\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 3, 4, 1]
+            }
+        }
+    },
+    {
+        "name": "Shambling Husk",
+        "gamemaster": {
+            "spawnEgg": "HUSK_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:husk_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:25,Name:\"generic.max_health\"},{Base:0.3d,Name:\"generic.knockback_resistance\"},{Base:0.2d,Name:\"generic.movement_speed\"}],CanBreakDoors:1b,CustomName:'{\"text\":\"Shambling Husk\",\"color\":\"gray\"}',Health:25.0f,IsBaby:0b,Tags:[\"mob.shambling_husk\"],id:\"minecraft:husk\"},display:{Name:'{\"text\":\"Shambling Husk\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [4, 4, 3]
+            }
+        }
+    },
+    {
+        "name": "Decrepit Husk",
+        "gamemaster": {
+            "spawnEgg": "SKELETON_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:skeleton_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[0.085f,0.085f,-327.67f,-327.67f],ArmorItems:[{},{},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:14270344}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;580330082,-682014249,-1567942996,1715072816],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU0YTVmMDhkMmVhZTBlMDNkZjMwZTA5YzYwYTQzYmZjZjY5NDdhOTIzZTI2N2JjNzk3ODQ2NjVlNGU3NTI4NyJ9fX0=\"}]}}}}],Attributes:[{Base:25,Name:\"generic.max_health\"},{Base:0.3d,Name:\"generic.knockback_resistance\"},{Base:0.17d,Name:\"generic.movement_speed\"}],CustomName:'{\"text\":\"Decrepit Husk\",\"color\":\"gray\"}',HandDropChances:[-327.67f,0.085f],HandItems:[{Count:1b,id:\"minecraft:bow\"},{}],Health:25.0f,Tags:[\"mob.shambling_husk\",\"mob.decrepit_husk\"],id:\"minecraft:skeleton\"},display:{Name:'{\"text\":\"Decrepit Husk\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 2, 2]
+            }
+        }
+    },
+    {
+        "name": "Pardosa",
+        "gamemaster": {
+            "spawnEgg": "SPIDER_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:spider_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:1,Name:\"generic.knockback_resistance\"},{Base:0.3d,Name:\"generic.movement_speed\"}],CustomName:'{\"text\":\"Pardosa\",\"color\":\"gray\"}',Tags:[\"mob.pardosa\"],id:\"minecraft:spider\"},display:{Name:'{\"text\":\"Pardosa\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 2, 2, 3]
+            }
+        }
+    },
+    {
+        "name": "Buzzard",
+        "gamemaster": {
+            "spawnEgg": "PHANTOM_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:phantom_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:35,Name:\"generic.max_health\"}],CustomName:'{\"text\":\"Buzzard\",\"color\":\"gray\"}',Health:35.0f,Silent:1b,Size:4,Tags:[\"mob.buzzard\",\"effect.fireproof\",\"base.deathtime\"],id:\"minecraft:phantom\"},display:{Name:'{\"text\":\"Buzzard\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Swarmth",
+        "gamemaster": {
+            "spawnEgg": "VEX_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:vex_spawn_egg\",tag:{EntityTag:{ActiveEffects:[{Amplifier:1b,Duration:1000000,Id:14b,ShowParticles:0b}],ArmorDropChances:[0.085f,0.085f,0.085f,-327.67f],ArmorItems:[{},{},{},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-1699394553,-437498341,-1511214992,82343034],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIwZTBjNTY0MDAwOWM1NmFlNjFkZGRmYThkMWQ0ZThhM2M4Y2U3YmQxZjdlODkzOTliMTdlZTI0OGNhZDkxMyJ9fX0=\"}]}}}}],Attributes:[{Base:5,Name:\"generic.max_health\"},{Base:2,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"Swarmth\"}',HandItems:[{Count:1b,id:\"minecraft:air\"},{}],Health:5.0f,LifeTicks:1000000,Tags:[\"mob.swarmth\"],id:\"minecraft:vex\"},display:{Name:'{\"text\":\"Swarmth\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [4, 7, 5]
+            }
+        }
+    },
+    {
+        "name": "Limus",
+        "gamemaster": {
+            "spawnEgg": "SLIME_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:slime_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:40,Name:\"generic.max_health\"},{Base:0.8d,Name:\"generic.knockback_resistance\"},{Base:8,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"Limus\"}',Health:40.0f,Size:5,Tags:[\"mob.limus\"],id:\"minecraft:slime\"},display:{Name:'{\"text\":\"Limus\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": true,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 1, 2, 2]
+            }
+        }
+    },
+    {
+        "name": "Decipio",
+        "gamemaster": {
+            "spawnEgg": "ZOMBIE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:zombie_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{Enchantments:[{id:\"minecraft:depth_strider\",lvl:13s}],display:{color:925454}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:925454}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:925454}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-1789174978,507465722,112572184,1768405482],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY3ZWRlOWM4OGYxYzMzYzk1NGJiYzgxYzhkYTg3MWNhYmZjYzIzZDU1ZjhiNDkzYTU4OWY4MjM5ZDZjMzkifX19\"}]}}}}],Attributes:[{Base:25,Name:\"generic.max_health\"},{Base:0.3d,Name:\"generic.knockback_resistance\"},{Base:4,Name:\"generic.attack_damage\"}],CanBreakDoors:1b,CustomName:'{\"text\":\"Decipio\",\"color\":\"gray\"}',Health:25.0f,IsBaby:1b,Tags:[\"mob.decipio\"],id:\"minecraft:zombie\"},display:{Name:'{\"text\":\"Decipio\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 2, 3]
+            }
+        }
+    },
+    {
+        "name": "Sarko",
+        "gamemaster": {
+            "spawnEgg": "ZOMBIE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:zombie_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{Enchantments:[{id:\"minecraft:depth_strider\",lvl:13s}],display:{color:1064209}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:1064209}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:1064209}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-135477229,-2080420875,-1940835749,-356407377],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJlN2ZhMmY5YjhkNmQxZTczNGVkYTVlM2NlMDI2Njg4MTM0MjkyZmNhZmMzMjViMWVhZDQzZDg5Y2MxZTEifX19\"}]}}}}],Attributes:[{Base:65,Name:\"generic.max_health\"},{Base:1,Name:\"generic.knockback_resistance\"}],CanBreakDoors:1b,CustomName:'{\"text\":\"Sarko\",\"color\":\"gray\"}',HandDropChances:[-327.67f,0.085f],HandItems:[{Count:1b,id:\"minecraft:iron_axe\"},{}],Health:65.0f,Tags:[\"mob.sarko\"],id:\"minecraft:zombie\"},display:{Name:'{\"text\":\"Sarko\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1]
+            }
+        }
+    },
+    {
+        "name": "Cordico",
+        "gamemaster": {
+            "spawnEgg": "ZOMBIE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:zombie_spawn_egg\",tag:{EntityTag:{ActiveEffects:[{Amplifier:1b,Duration:10000000,Id:9b,ShowParticles:1b}],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:12058624}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:14221312}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:15204352}}},{Count:1b,id:\"minecraft:red_mushroom_block\"}],Attributes:[{Base:35,Name:\"generic.max_health\"},{Base:0.8d,Name:\"generic.knockback_resistance\"},{Base:8,Name:\"generic.attack_damage\"}],CanBreakDoors:1b,CustomName:'{\"text\":\"Cordico\",\"color\":\"gray\"}',Health:35.0f,IsBaby:0b,Tags:[\"mob.cordico\"],id:\"minecraft:zombie\"},display:{Name:'{\"text\":\"Cordico\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 0, 0, 0, 0, 2, 0, 0]
+            }
+        }
+    },
+    {
+        "name": "Tarantula",
+        "gamemaster": {
+            "spawnEgg": "SPIDER_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:spider_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[0.085f,-327.67f,0.085f,0.085f],ArmorItems:[{},{Count:1b,id:\"minecraft:leather_boots\",tag:{Enchantments:[{id:\"minecraft:feather_falling\",lvl:100s}]}},{},{}],Attributes:[{Base:20,Name:\"generic.max_health\"},{Base:0.3d,Name:\"generic.knockback_resistance\"},{Base:4,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"Tarantula\",\"color\":\"gray\"}',Health:20.0f,Tags:[\"mob.tarantula\",\"pounce_leap_up\"],id:\"minecraft:spider\"},display:{Name:'{\"text\":\"Tarantula\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 2, 3]
+            }
+        }
+    },
+    {
+        "name": "Thylacoleo",
+        "gamemaster": {
+            "spawnEgg": "SPIDER_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:spider_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:50,Name:\"generic.max_health\"},{Base:30,Name:\"generic.follow_range\"},{Base:0.3d,Name:\"generic.movement_speed\"},{Base:5,Name:\"generic.attack_damage\"},{Base:1,Name:\"generic.attack_knockback\"}],CustomName:'{\"text\":\"Thylacoleo\",\"color\":\"gray\"}',Health:50.0f,Silent:1b,Tags:[\"ai.thyla\",\"mob.thylacoleo\"],id:\"minecraft:spider\"},display:{Name:'{\"text\":\"Thylacoleo\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1]
+            }
+        }
+    },
+    {
+        "name": "Wild Bear",
+        "gamemaster": {
+            "spawnEgg": "POLAR_BEAR_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:polar_bear_spawn_egg\",tag:{EntityTag:{AngerTime:2147483647,Attributes:[{Base:55,Name:\"generic.max_health\"},{Base:50,Name:\"generic.follow_range\"},{Base:0.7d,Name:\"generic.knockback_resistance\"},{Base:0.25d,Name:\"generic.movement_speed\"},{Base:7,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"Wild Bear\",\"color\":\"gray\"}',Health:55.0f,Tags:[\"mob.wild_bear\"],id:\"minecraft:polar_bear\"},display:{Name:'{\"text\":\"Wild Bear\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 2, 1]
+            }
+        }
+    },
+    {
+        "name": "Trilanops",
+        "gamemaster": {
+            "spawnEgg": "WITHER_SKELETON_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:wither_skeleton_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:2368548}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:2368548}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:2368548}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;1633215634,153112481,-1836718257,-1587533605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY2MDkzYWMyYTU0YzFmMzFmMDM4NjljNWJjZWMwODg2MDRmOWRmN2QxNDBhYTZjNjliYTM3YjEyZGZiYzk2YiJ9fX0=\"}]}}}}],Attributes:[{Base:95,Name:\"generic.max_health\"},{Base:100,Name:\"generic.follow_range\"},{Base:1,Name:\"generic.knockback_resistance\"},{Base:0.2d,Name:\"generic.movement_speed\"},{Base:5,Name:\"generic.attack_knockback\"}],CustomName:'{\"text\":\"Trilanops\",\"color\":\"gray\"}',HandDropChances:[-327.67f,0.085f],HandItems:[{Count:1b,id:\"minecraft:iron_axe\"},{}],Health:95.0f,Tags:[\"mob.trilanops\"],id:\"minecraft:wither_skeleton\"},display:{Name:'{\"text\":\"Trilanops\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": false,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1]
+            }
+        }
+    },
+    {
+        "name": "Archops",
+        "gamemaster": {
+            "spawnEgg": "ZOMBIE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:zombie_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:0}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:0}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:0}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;78120667,-1277932032,-1203642297,-1520124116],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjNmZmFjZjUxODNkMGQyMDA5ZThiN2ViMDhhMjRkZGUwMTYyMTRjYTFiZDIzNGNiNjBiMTYxMWVkYWI5ZjZmIn19fQ==\"}]}}}}],Attributes:[{Base:25,Name:\"generic.max_health\"},{Base:0.34d,Name:\"generic.movement_speed\"},{Base:3,Name:\"generic.attack_damage\"},{Base:0,Name:\"zombie.spawn_reinforcements\"}],CanBreakDoors:1b,CustomName:'{\"text\":\"Archops\",\"color\":\"gray\"}',Health:25.0f,IsBaby:1b,Tags:[\"mob.archops\"],id:\"minecraft:zombie\"},display:{Name:'{\"text\":\"Archops\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 3, 4]
+            }
+        }
+    },
+    {
+        "name": "Dilopha",
+        "gamemaster": {
+            "spawnEgg": "HUSK_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:husk_spawn_egg\",tag:{EntityTag:{ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:7023880}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:7023880}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:7023880}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-1870911087,252135465,-1205063561,-1092241621],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM3NWQ0MmM4NTcyNTBmODdlYjQzOTAxNjA2OGZmZDgyN2Y4ZWEzOGI0NmM5MmQ3NzQ1YjE5MjEyMDZmNTY0YiJ9fX0=\"}]}}}}],Attributes:[{Base:25,Name:\"generic.max_health\"},{Base:18,Name:\"generic.follow_range\"},{Base:0.22d,Name:\"generic.movement_speed\"},{Base:4,Name:\"generic.attack_damage\"},{Base:0,Name:\"zombie.spawn_reinforcements\"}],CustomName:'{\"text\":\"Dilopha\",\"color\":\"gray\"}',HandItems:[{Count:1b,id:\"minecraft:air\"},{Count:1b,id:\"minecraft:air\"}],Health:25.0f,IsBaby:1b,Tags:[\"ai.pmist30\"],id:\"minecraft:husk\"},display:{Name:'{\"text\":\"Dilopha\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 2, 3]
+            }
+        }
+    },
+    {
+        "name": "Carno",
+        "gamemaster": {
+            "spawnEgg": "ZOMBIE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:zombie_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:5717545}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:5717545}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:5717545}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;1183407262,-1254327743,255289106,-665923837],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQwNDk4NjZhMjlmNzhjMGY1ZjYyNWI1Zjc2YzdlMTQzOWE3MmZiN2VmZWNiNjQzMDJhMzEzMTRjZTE4In19fQ==\"}]}}}}],Attributes:[{Base:40,Name:\"generic.max_health\"},{Base:20,Name:\"generic.follow_range\"},{Base:0.1d,Name:\"generic.knockback_resistance\"},{Base:0.37d,Name:\"generic.movement_speed\"},{Base:3.5d,Name:\"generic.attack_damage\"},{Base:3,Name:\"generic.armor\"},{Base:3,Name:\"generic.armor_toughness\"},{Base:2,Name:\"generic.attack_knockback\"},{Base:0,Name:\"zombie.spawn_reinforcements\"}],CanBreakDoors:1b,CustomName:'{\"text\":\"Carno\",\"color\":\"gray\"}',HandItems:[{Count:1b,id:\"minecraft:air\"},{Count:1b,id:\"minecraft:air\"}],Health:40.0f,IsBaby:0b,PersistenceRequired:1b,Tags:[\"mob.carno\",\"terra_leap\"],id:\"minecraft:zombie\"},display:{Name:'{\"text\":\"Carno\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 0]
+            }
+        }
+    },
+    {
+        "name": "Ospreyer",
+        "gamemaster": {
+            "spawnEgg": "ZOMBIE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:zombie_spawn_egg\",tag:{EntityTag:{ActiveEffects:[{Amplifier:1b,Duration:100000,Id:8b,ShowParticles:0b},{Amplifier:1b,Duration:1000000,Id:14b,ShowParticles:0b}],ArmorDropChances:[-327.67f,0.085f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:iron_boots\"},{Count:1b,id:\"minecraft:leather_leggings\"},{Count:1b,id:\"minecraft:leather_chestplate\"},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;1078092076,-82819291,-1462592881,139564908],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTA5MTFiZmMxZjdjMWFjOTRkMTkzNGM1MzY1ZWMzZTZiNWRhNTJiNjk2MTkxNWZhMTZkZWI1M2UwMjRjMWEifX19\"}]}}}}],Attributes:[{Base:55,Name:\"generic.max_health\"},{Base:0.25d,Name:\"generic.movement_speed\"},{Base:5,Name:\"generic.attack_damage\"},{Base:3,Name:\"generic.attack_knockback\"}],CustomName:'{\"text\":\"Ospreyer\",\"color\":\"gray\"}',FallFlying:1b,HandItems:[{Count:1b,id:\"minecraft:air\"},{}],Health:55.0f,Silent:1b,Tags:[\"mob.ospreyer\",\"base.deathtime\",\"hellish_catalyst_leap\",\"upwards_leap\",\"terra_leap\"],id:\"minecraft:zombie\"},display:{Name:'{\"text\":\"Ospreyer\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": false
+                },
+                "groups": [5, 3]
+            }
+        }
+    },
+    {
+        "name": "Direwolf",
+        "gamemaster": {
+            "spawnEgg": "WOLF_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:wolf_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:30,Name:\"generic.max_health\"},{Base:0.34d,Name:\"generic.movement_speed\"},{Base:3,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"Direwolf\"}',Health:30.0f,Tags:[\"mob.direwolf\"],id:\"minecraft:wolf\"},display:{Name:'{\"text\":\"Direwolf\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [3, 3, 4]
+            }
+        }
+    },
+    {
+        "name": "Potenaur",
+        "gamemaster": {
+            "spawnEgg": "WITHER_SKELETON_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:wither_skeleton_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:3289650}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:3289650}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:3289650}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;714580676,-1996141734,-1610497919,-1531535232],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RiZDExNWFlMjUwZjU0OGY0NWZkZmNlY2QwN2QwOWQ5ZjFhYWQ3ZTZjMGY4YjJmZTAwMzQ3ZjQ1ODYwMjUwYiJ9fX0=\"}]}}}}],Attributes:[{Base:70,Name:\"generic.max_health\"},{Base:60,Name:\"generic.follow_range\"},{Base:0.7d,Name:\"generic.knockback_resistance\"},{Base:0.26d,Name:\"generic.movement_speed\"},{Base:9,Name:\"generic.attack_damage\"},{Base:3,Name:\"generic.attack_knockback\"}],CustomName:'{\"text\":\"Potenaur\",\"color\":\"gray\"}',HandDropChances:[-327.67f,-327.67f],HandItems:[{Count:1b,id:\"minecraft:flint\"},{Count:1b,id:\"minecraft:flint\"}],Health:70.0f,PersistenceRequired:1b,Silent:1b,Tags:[\"mob.potenaur\",\"base.deathtime\"],id:\"minecraft:wither_skeleton\"},display:{Name:'{\"text\":\"Potenaur\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Aquila",
+        "gamemaster": {
+            "spawnEgg": "PHANTOM_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:phantom_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:80,Name:\"generic.max_health\"},{Base:5,Name:\"generic.attack_damage\"},{Base:1,Name:\"generic.attack_knockback\"}],CustomName:'{\"text\":\"Aquila\",\"color\":\"gray\"}',Health:80.0f,PersistenceRequired:1b,Size:7,Tags:[\"mob.aquila\",\"effect.fireproof\",\"revenant_leap\"],id:\"minecraft:phantom\"},display:{Name:'{\"text\":\"Aquila\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": false
+                },
+                "groups": [1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Yutyronus",
+        "gamemaster": {
+            "spawnEgg": "WITHER_SKELETON_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:wither_skeleton_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:13750737}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:13750737}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:13750737}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;1955493604,2022589451,-1735921604,1204829315],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM0MjUzODAxMjFjOGVjMWUwYmY0OTVhOTgzNGMxMGNiODNkOTRkMTlkZTk5NDJiMTg5NDAyM2E4Zjg3MiJ9fX0=\"}]}}}}],Attributes:[{Base:50,Name:\"generic.max_health\"},{Base:20,Name:\"generic.follow_range\"},{Base:0.5d,Name:\"generic.knockback_resistance\"},{Base:0.3d,Name:\"generic.movement_speed\"},{Base:6,Name:\"generic.armor\"},{Base:6,Name:\"generic.armor_toughness\"}],CustomName:'{\"text\":\"Yutyronus\",\"color\":\"gray\"}',HandDropChances:[-327.67f,0.085f],HandItems:[{Count:1b,id:\"minecraft:air\"},{}],Health:50.0f,PersistenceRequired:1b,Silent:1b,Tags:[\"mob.yutyronus\",\"base.deathtime\"],id:\"minecraft:wither_skeleton\"},display:{Name:'{\"text\":\"Yutyronus\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1]
+            }
+        }
+    },
+    {
+        "name": "Apexora",
+        "gamemaster": {
+            "spawnEgg": "WITHER_SKELETON_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:wither_skeleton_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:3218967}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:3218967}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:3218967}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-665101223,489571477,-1344894513,1672110336],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNkMzY2YzdkOWFhMWY1NWZkODg2YjI3M2ZjMTMwNzRkMjlhZjQ2Mzc2MWMwYTcxYWRjMjFlYWRhYTI3In19fQ==\"}]}}}}],Attributes:[{Base:100,Name:\"generic.max_health\"},{Base:35,Name:\"generic.follow_range\"},{Base:0.5d,Name:\"generic.knockback_resistance\"},{Base:0.3d,Name:\"generic.movement_speed\"},{Base:10,Name:\"generic.armor\"},{Base:10,Name:\"generic.armor_toughness\"},{Base:2,Name:\"generic.attack_knockback\"}],CustomName:'{\"text\":\"Apexora\",\"color\":\"gray\"}',HandDropChances:[-327.67f,0.085f],HandItems:[{Count:1b,id:\"minecraft:iron_axe\"},{}],Health:100.0f,PersistenceRequired:1b,Silent:1b,Tags:[\"mob.apexora\",\"base.deathtime\"],id:\"minecraft:wither_skeleton\"},display:{Name:'{\"text\":\"Apexora\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": false,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1]
+            }
+        }
+    },
+    {
+        "name": "Allosaurus",
+        "gamemaster": {
+            "spawnEgg": "WITHER_SKELETON_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:wither_skeleton_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[0.085f,0.085f,0.085f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:7628896}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:7628896}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:7628896}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;814382083,-2105653661,-1601425923,-676756014],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ2MTQ1YjhlN2UzODEyMjMzM2FjMmQ3ZTI0Y2RmNTdmOTMxN2I2ZTM1OGYzOWFjNDZiNDY3MDdlZmEzMTI4OSJ9fX0=\"}]}}}}],Attributes:[{Base:55,Name:\"generic.max_health\"},{Base:30,Name:\"generic.follow_range\"},{Base:0.34d,Name:\"generic.movement_speed\"},{Base:3,Name:\"generic.attack_damage\"},{Base:5,Name:\"generic.armor\"},{Base:5,Name:\"generic.armor_toughness\"},{Base:1,Name:\"generic.attack_knockback\"}],CustomName:'{\"text\":\"Allosaurus\",\"color\":\"gray\"}',HandItems:[{Count:1b,id:\"minecraft:air\"},{}],Health:55.0f,PersistenceRequired:1b,Silent:1b,Tags:[\"mob.allosaurus\",\"ai.pack\",\"base.deathtime\"],id:\"minecraft:wither_skeleton\"},display:{Name:'{\"text\":\"Allosaurus\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [3]
+            }
+        }
+    },
+    {
+        "name": "Mane",
+        "gamemaster": {
+            "spawnEgg": "ZOMBIE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:zombie_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:5719345}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:5719345}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:5719345}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-1887194617,-1727117769,-1883524697,-1000856471],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc1ODhhMTgzYWRmNjJjOTlhNjUzYjVjYjFiYTE3ZTEyNzI1NGU0ZDk1MjNlZWI3MjRjN2U3MmJjMjE2N2MifX19\"}]}}}}],Attributes:[{Base:15,Name:\"generic.max_health\"},{Base:10,Name:\"generic.follow_range\"},{Base:0,Name:\"zombie.spawn_reinforcements\"}],CanBreakDoors:0b,CustomName:'{\"text\":\"Mane\",\"color\":\"gray\"}',HandItems:[{Count:1b,id:\"minecraft:air\"},{Count:1b,id:\"minecraft:air\"}],Health:15.0f,IsBaby:1b,PersistenceRequired:1b,Tags:[\"mob.mane\"],id:\"minecraft:zombie\"},display:{Name:'{\"text\":\"Mane\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 2, 3]
+            }
+        }
+    },
+    {
+        "name": "Cow",
+        "gamemaster": {
+            "spawnEgg": "COW_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:cow_spawn_egg\",tag:{EntityTag:{id:\"minecraft:cow\"},display:{Name:'{\"text\":\"Cow\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [3, 4]
+            }
+        }
+    },
+    {
+        "name": "Fox",
+        "gamemaster": {
+            "spawnEgg": "FOX_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:fox_spawn_egg\",tag:{EntityTag:{id:\"minecraft:fox\"},display:{Name:'{\"text\":\"Fox\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Pig",
+        "gamemaster": {
+            "spawnEgg": "PIG_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:pig_spawn_egg\",tag:{EntityTag:{id:\"minecraft:pig\"},display:{Name:'{\"text\":\"Pig\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [2, 3, 4]
+            }
+        }
+    },
+    {
+        "name": "Brown Axolotl",
+        "gamemaster": {
+            "spawnEgg": "AXOLOTL_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:axolotl_spawn_egg\",tag:{EntityTag:{id:\"minecraft:axolotl\"},display:{Name:'{\"text\":\"Brown Axolotl\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Pompeius",
+        "gamemaster": {
+            "spawnEgg": "ZOMBIE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:zombie_spawn_egg\",tag:{EntityTag:{ActiveEffects:[{Amplifier:1b,Duration:1000000,Id:13b,ShowParticles:0b}],ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{Enchantments:[{id:\"minecraft:depth_strider\",lvl:18s}],display:{color:3550485}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:3550485}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:3550485}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-450384669,296568689,-2014971869,1717152372],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjg2NjRmYjI2ZmNmMjFiYjY4NGFlOTE0N2FiZDQ5Njg3Y2M3YmJhMGIwMTE0ZGJlZjYxYzdkZDM4MWNhIn19fQ==\"}]}}}}],Attributes:[{Base:15,Name:\"generic.max_health\"},{Base:30,Name:\"generic.follow_range\"},{Base:0.2d,Name:\"generic.movement_speed\"},{Base:0,Name:\"zombie.spawn_reinforcements\"}],CanBreakDoors:1b,CustomName:'{\"text\":\"Pompeius\",\"color\":\"gray\"}',DrownedConversionTime:-99999,HandDropChances:[-327.67f,0.085f],HandItems:[{Count:1b,id:\"minecraft:wooden_axe\"},{}],Health:15.0f,IsBaby:1b,PersistenceRequired:1b,Tags:[\"pompeius\",\"mob.decipio\"],Team:\"hostile\",id:\"minecraft:zombie\"},display:{Name:'{\"text\":\"Pompeius\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [2, 2, 3]
+            }
+        }
+    },
+    {
+        "name": "Horse",
+        "gamemaster": {
+            "spawnEgg": "HORSE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:horse_spawn_egg\",tag:{EntityTag:{id:\"minecraft:horse\"},display:{Name:'{\"text\":\"Horse\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1]
+            }
+        }
+    },
+    {
+        "name": "Donkey",
+        "gamemaster": {
+            "spawnEgg": "DONKEY_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:donkey_spawn_egg\",tag:{EntityTag:{id:\"minecraft:donkey\"},display:{Name:'{\"text\":\"Donkey\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 1, 2, 2]
+            }
+        }
+    },
+    {
+        "name": "Mule",
+        "gamemaster": {
+            "spawnEgg": "MULE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:mule_spawn_egg\",tag:{EntityTag:{id:\"minecraft:mule\"},display:{Name:'{\"text\":\"Mule\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Sandpiper",
+        "gamemaster": {
+            "spawnEgg": "PARROT_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:parrot_spawn_egg\",tag:{EntityTag:{CustomName:'{\"text\":\"Sandpiper\",\"italic\":false}',Variant:4,id:\"minecraft:parrot\"},display:{Name:'{\"text\":\"Sandpiper\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [3, 4, 3]
+            }
+        }
+    },
+    {
+        "name": "Mountain Llama",
+        "gamemaster": {
+            "spawnEgg": "LLAMA_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:llama_spawn_egg\",tag:{EntityTag:{Variant:3,id:\"minecraft:llama\"},display:{Name:'{\"text\":\"Mountain Llama\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1, 2]
+            }
+        }
+    },
+    {
+        "name": "Goat",
+        "gamemaster": {
+            "spawnEgg": "GOAT_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:goat_spawn_egg\",tag:{EntityTag:{id:\"minecraft:goat\"},display:{Name:'{\"text\":\"Goat\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 80,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [3, 2]
+            }
+        }
+    },
+    {
+        "name": "Snow Fox",
+        "gamemaster": {
+            "spawnEgg": "FOX_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:fox_spawn_egg\",tag:{EntityTag:{Type:\"snow\",id:\"minecraft:fox\"},display:{Name:'{\"text\":\"Snow Fox\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [3, 2, 1]
+            }
+        }
+    },
+    {
+        "name": "Sheep",
+        "gamemaster": {
+            "spawnEgg": "SHEEP_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:sheep_spawn_egg\",tag:{EntityTag:{id:\"minecraft:sheep\"},display:{Name:'{\"text\":\"Sheep\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1]
+            }
+        }
+    },
+    {
+        "name": "Panda",
+        "gamemaster": {
+            "spawnEgg": "PANDA_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:panda_spawn_egg\",tag:{EntityTag:{id:\"minecraft:panda\"},display:{Name:'{\"text\":\"Panda\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 2, 3]
+            }
+        }
+    },
+    {
+        "name": "Snowy Rabbit",
+        "gamemaster": {
+            "spawnEgg": "RABBIT_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:rabbit_spawn_egg\",tag:{EntityTag:{RabbitType:1,id:\"minecraft:rabbit\"},display:{Name:'{\"text\":\"Snowy Rabbit\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [4, 3, 5]
+            }
+        }
+    },
+    {
+        "name": "Salmon",
+        "gamemaster": {
+            "spawnEgg": "SALMON_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:salmon_spawn_egg\",tag:{EntityTag:{id:\"minecraft:salmon\"},display:{Name:'{\"text\":\"Salmon\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [6, 5, 2, 4]
+            }
+        }
+    },
+    {
+        "name": "River Demi",
+        "gamemaster": {
+            "spawnEgg": "GUARDIAN_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:guardian_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:15,Name:\"generic.max_health\"},{Base:3,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"River Demi\",\"color\":\"gray\"}',Health:15.0f,Tags:[\"mob.river_demi\"],id:\"minecraft:guardian\"},display:{Name:'{\"text\":\"River Demi\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [2, 2, 3]
+            }
+        }
+    },
+    {
+        "name": "Cod",
+        "gamemaster": {
+            "spawnEgg": "COD_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:cod_spawn_egg\",tag:{EntityTag:{id:\"minecraft:cod\"},display:{Name:'{\"text\":\"Cod\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [5, 4, 3]
+            }
+        }
+    },
+    {
+        "name": "Axolotl",
+        "gamemaster": {
+            "spawnEgg": "AXOLOTL_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:axolotl_spawn_egg\",tag:{EntityTag:{id:\"minecraft:axolotl\"},display:{Name:'{\"text\":\"Axolotl\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": false
+                },
+                "groups": [1, 1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Imum",
+        "gamemaster": {
+            "spawnEgg": "PHANTOM_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:phantom_spawn_egg\",tag:{EntityTag:{ActiveEffects:[{Amplifier:1b,Duration:1000000,Id:13b,ShowParticles:0b}],Attributes:[{Base:20,Name:\"generic.max_health\"}],CustomName:'{\"text\":\"Imum\",\"italic\":false}',Health:20.0f,PersistenceRequired:1b,Size:4,Tags:[\"mob.imum\"],id:\"minecraft:phantom\"},display:{Name:'{\"text\":\"Imum\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 40,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Dolphin",
+        "gamemaster": {
+            "spawnEgg": "DOLPHIN_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:dolphin_spawn_egg\",tag:{EntityTag:{id:\"minecraft:dolphin\"},display:{Name:'{\"text\":\"Dolphin\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 2, 2]
+            }
+        }
+    },
+    {
+        "name": "Tropical Fish",
+        "gamemaster": {
+            "spawnEgg": "TROPICAL_FISH_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:tropical_fish_spawn_egg\",tag:{EntityTag:{id:\"minecraft:tropical_fish\"},display:{Name:'{\"text\":\"Tropical Fish\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [5, 7]
+            }
+        }
+    },
+    {
+        "name": "Squid",
+        "gamemaster": {
+            "spawnEgg": "SQUID_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:squid_spawn_egg\",tag:{EntityTag:{id:\"minecraft:squid\"},display:{Name:'{\"text\":\"Squid\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 40,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1, 2, 4]
+            }
+        }
+    },
+    {
+        "name": "Pufferfish",
+        "gamemaster": {
+            "spawnEgg": "PUFFERFISH_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:pufferfish_spawn_egg\",tag:{EntityTag:{id:\"minecraft:pufferfish\"},display:{Name:'{\"text\":\"Pufferfish\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [4]
+            }
+        }
+    },
+    {
+        "name": "Termite",
+        "gamemaster": {
+            "spawnEgg": "SILVERFISH_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:silverfish_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:10,Name:\"generic.max_health\"}],CustomName:'{\"text\":\"Termite\",\"italic\":false}',Health:10.0f,id:\"minecraft:silverfish\"},display:{Name:'{\"text\":\"Termite\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [5, 3]
+            }
+        }
+    },
+    {
+        "name": "Penguin",
+        "gamemaster": {
+            "spawnEgg": "DROWNED_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:drowned_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{Enchantments:[{id:\"minecraft:depth_strider\",lvl:15s}],display:{color:5265258}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:5265258}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:5265258}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-1155429644,-124807578,-1383531461,1149884044],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1OTY0YzVkYzVhMzc0ZWQ5ODY0MjkwMTI5YjdlYWVjYzNmNDM5OWY3NTE2YjJhMzg1NzNhYTc1MjcxN2FjIn19fQ==\"}]}}}}],Attributes:[{Base:0,Name:\"generic.follow_range\"},{Base:1,Name:\"generic.knockback_resistance\"},{Base:4,Name:\"generic.attack_damage\"},{Base:0,Name:\"zombie.spawn_reinforcements\"}],CustomName:'{\"text\":\"Penguin\"}',IsBaby:1b,PersistenceRequired:1b,Silent:1b,Tags:[\"mob.penguin\"],id:\"minecraft:drowned\"},display:{Name:'{\"text\":\"Penguin\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [4]
+            }
+        }
+    },
+    {
+        "name": "Glowsquid",
+        "gamemaster": {
+            "spawnEgg": "GLOW_SQUID_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:glow_squid_spawn_egg\",tag:{EntityTag:{id:\"minecraft:glow_squid\"},display:{Name:'{\"text\":\"Glowsquid\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 3, 2]
+            }
+        }
+    },
+    {
+        "name": "Microraptor",
+        "gamemaster": {
+            "spawnEgg": "ZOMBIE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:zombie_spawn_egg\",tag:{EntityTag:{ActiveEffects:[{Amplifier:1b,Duration:100000,Id:8b,ShowParticles:0b},{Amplifier:0b,Duration:10000,Id:28b,ShowParticles:0b}],ArmorDropChances:[-327.67f,-327.67f,-327.67f,-327.67f],ArmorItems:[{Count:1b,id:\"minecraft:leather_boots\",tag:{display:{color:4663050}}},{Count:1b,id:\"minecraft:leather_leggings\",tag:{display:{color:4663050}}},{Count:1b,id:\"minecraft:leather_chestplate\",tag:{display:{color:4663050}}},{Count:1b,id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;1078092076,-82819291,-1462592881,139564908],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTA5MTFiZmMxZjdjMWFjOTRkMTkzNGM1MzY1ZWMzZTZiNWRhNTJiNjk2MTkxNWZhMTZkZWI1M2UwMjRjMWEifX19\"}]}}}}],Attributes:[{Base:8,Name:\"generic.max_health\"},{Base:80,Name:\"generic.follow_range\"},{Base:0.45d,Name:\"generic.movement_speed\"},{Base:2,Name:\"generic.attack_damage\"},{Base:0,Name:\"zombie.spawn_reinforcements\"}],CanBreakDoors:1b,CustomName:'{\"text\":\"Microraptor\",\"color\":\"gray\"}',Health:8.0f,IsBaby:1b,Tags:[\"microraptor\",\"mob.mane\"],id:\"minecraft:zombie\"},display:{Name:'{\"text\":\"Microraptor\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": false
+                },
+                "groups": [1, 4, 2]
+            }
+        }
+    },
+    {
+        "name": "Brooder Skilter",
+        "gamemaster": {
+            "spawnEgg": "PILLAGER_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:pillager_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:20,Name:\"generic.max_health\"},{Base:60,Name:\"generic.follow_range\"},{Base:0.43d,Name:\"generic.movement_speed\"}],CustomName:'{\"text\":\"Brooder Skilter\",\"color\":\"gray\"}',HandDropChances:[-327.67f,0.085f],HandItems:[{Count:1b,id:\"minecraft:crossbow\"},{}],Health:20.0f,PersistenceRequired:1b,Tags:[\"brooder\"],Team:\"hostile\",id:\"minecraft:pillager\"},display:{Name:'{\"text\":\"Brooder Skilter\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": false,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [13, 8, 4]
+            }
+        }
+    },
+    {
+        "name": "Preado",
+        "gamemaster": {
+            "spawnEgg": "RAVAGER_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:ravager_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:140,Name:\"generic.max_health\"},{Base:0.5d,Name:\"generic.knockback_resistance\"},{Base:8,Name:\"generic.attack_damage\"},{Base:8,Name:\"generic.armor\"},{Base:8,Name:\"generic.armor_toughness\"},{Base:0.8d,Name:\"generic.attack_knockback\"}],CustomName:'{\"text\":\"Preado\"}',Health:140.0f,PersistenceRequired:1b,RoarTick:10,Tags:[\"mob.preado\"],id:\"minecraft:ravager\"},display:{Name:'{\"text\":\"Preado\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 8,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1]
+            }
+        }
+    },
+    {
+        "name": "Crocodile",
+        "gamemaster": {
+            "spawnEgg": "DROWNED_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:drowned_spawn_egg\",tag:{EntityTag:{ActiveEffects:[{Amplifier:1b,Duration:1000000,Id:14b,ShowParticles:0b}],Attributes:[{Base:30,Name:\"generic.follow_range\"},{Base:0,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"Crocodile\",\"italic\":false}',HandItems:[{Count:1b,id:\"minecraft:air\"},{}],Invulnerable:1b,IsBaby:1b,PersistenceRequired:1b,Silent:1b,Tags:[\"mob.swampcrocodile\"],id:\"minecraft:drowned\"},display:{Name:'{\"text\":\"Crocodile\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": true,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1, 2]
+            }
+        }
+    },
+    {
+        "name": "Flike",
+        "gamemaster": {
+            "spawnEgg": "PARROT_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:parrot_spawn_egg\",tag:{EntityTag:{CustomName:'{\"text\":\"Flike\",\"italic\":false}',Tags:[\"hellish_catalyst_leap\",\"flike\"],Variant:2,id:\"minecraft:parrot\"},display:{Name:'{\"text\":\"Flike\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [2, 3]
+            }
+        }
+    },
+    {
+        "name": "Dukkar",
+        "gamemaster": {
+            "spawnEgg": "HOGLIN_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:hoglin_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:30,Name:\"generic.max_health\"},{Base:0.8d,Name:\"generic.knockback_resistance\"}],CannotBeHunted:1b,CustomName:'{\"text\":\"Dukkar\",\"color\":\"gray\",\"italic\":false}',Health:30.0f,IsImmuneToZombification:1b,Tags:[\"charger\",\"charger_basic\"],id:\"minecraft:hoglin\"},display:{Name:'{\"text\":\"Dukkar\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1, 1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Shark",
+        "gamemaster": {
+            "spawnEgg": "DROWNED_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:drowned_spawn_egg\",tag:{display:{Name:'[{\"text\":\"Shark\",\"color\":\"red\"}]'},EntityTag:{CustomNameVisible:1b,Tags:[\"effect.invis\"],CustomName:'[{\"text\":\"Shark\",\"color\":\"red\"}]',HandItems:[{id:'minecraft:placeholderitem',Count:1b},{}],ArmorItems:[{},{},{},{id:'minecraft:stone_button',Count:1b,tag:{CustomModelData:58001}}],Attributes:[{Name:generic.movement_speed,Base:1.75},{Name:generic.attack_damage,Base:7}]}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 1, 1, 1, 2]
+            }
+        }
+    },
+    {
+        "name": "Depthcharge",
+        "gamemaster": {
+            "spawnEgg": "GHAST_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:ghast_spawn_egg\",tag:{EntityTag:{ActiveEffects:[{Amplifier:1b,Duration:100000,Id:13b,ShowParticles:0b}],Attributes:[{Base:90,Name:\"generic.max_health\"},{Base:0.8d,Name:\"generic.knockback_resistance\"}],CustomName:'{\"text\":\"Depthcharge\",\"color\":\"gray\",\"italic\":false}',ExplosionPower:3,HasVisualFire:1b,Health:90.0f,Tags:[\"hellish_catalyst_leap\"],id:\"minecraft:ghast\"},display:{Name:'{\"text\":\"Depthcharge\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 60,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [1]
+            }
+        }
+    },
+    {
+        "name": "Pouncing Widow",
+        "gamemaster": {
+            "spawnEgg": "CAVE_SPIDER_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:cave_spider_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:8,Name:\"generic.max_health\"},{Base:1,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"Pouncing Widow\",\"color\":\"gray\"}',Health:8.0f,Tags:[\"terra_leap\",\"pounce_leap_up\"],id:\"minecraft:cave_spider\"},display:{Name:'{\"text\":\"Pouncing Widow\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [1]
+            }
+        }
+    },
+    {
+        "name": "Bat",
+        "gamemaster": {
+            "spawnEgg": "BAT_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:bat_spawn_egg\",tag:{EntityTag:{id:\"minecraft:bat\"},display:{Name:'{\"text\":\"Bat\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [2, 3]
+            }
+        }
+    },
+    {
+        "name": "Tropical Fish 1",
+        "gamemaster": {
+            "spawnEgg": "TROPICAL_FISH_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:tropical_fish_spawn_egg\",tag:{EntityTag:{Variant:151060992,id:\"minecraft:tropical_fish\"},display:{Name:'{\"text\":\"Tropical Fish 1\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [3, 0]
+            }
+        }
+    },
+    {
+        "name": "Tropical Fish 2",
+        "gamemaster": {
+            "spawnEgg": "TROPICAL_FISH_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:tropical_fish_spawn_egg\",tag:{EntityTag:{Variant:218694401,id:\"minecraft:tropical_fish\"},display:{Name:'{\"text\":\"Tropical Fish 2\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [4]
+            }
+        }
+    },
+    {
+        "name": "Tropical Fish 3",
+        "gamemaster": {
+            "spawnEgg": "TROPICAL_FISH_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:tropical_fish_spawn_egg\",tag:{EntityTag:{Variant:235733249,id:\"minecraft:tropical_fish\"},display:{Name:'{\"text\":\"Tropical Fish 3\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [4]
+            }
+        }
+    },
+    {
+        "name": "Tropical Fish 4",
+        "gamemaster": {
+            "spawnEgg": "TROPICAL_FISH_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:tropical_fish_spawn_egg\",tag:{EntityTag:{Variant:100795392,id:\"minecraft:tropical_fish\"},display:{Name:'{\"text\":\"Tropical Fish 4\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [5]
+            }
+        }
+    },
+    {
+        "name": "Garish Knave",
+        "gamemaster": {
+            "spawnEgg": "PIGLIN_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:piglin_spawn_egg\",tag:{EntityTag:{ArmorDropChances:[0.085f,0.085f,-327.67f,-327.67f],ArmorItems:[{},{},{},{Count:1b,id:\"minecraft:leather_helmet\"}],Attributes:[{Base:30,Name:\"generic.max_health\"},{Base:0.4d,Name:\"generic.knockback_resistance\"},{Base:4,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"Garish Knave\",\"color\":\"gray\"}',HandDropChances:[-327.67f,0.085f],HandItems:[{Count:1b,id:\"minecraft:crossbow\"},{}],Health:30.0f,IsBaby:0b,IsImmuneToZombification:1b,Tags:[\"garish_knave\"],Team:\"hostile\",id:\"minecraft:piglin\"},display:{Name:'{\"text\":\"Garish Knave\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": false
+                },
+                "groups": [6, 0]
+            }
+        }
+    },
+    {
+        "name": "Garish Havok (Weak)",
+        "gamemaster": {
+            "spawnEgg": "PIGLIN_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:piglin_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:40,Name:\"generic.max_health\"},{Base:0.4d,Name:\"generic.knockback_resistance\"},{Base:4,Name:\"generic.attack_damage\"}],CustomName:'{\"text\":\"Garish Havok\",\"color\":\"gray\"}',HandDropChances:[-327.67f,0.085f],HandItems:[{Count:1b,id:\"minecraft:stone_hoe\"},{}],Health:40.0f,IsBaby:0b,IsImmuneToZombification:1b,Tags:[\"garish_havok\"],Team:\"hostile\",id:\"minecraft:piglin\"},display:{Name:'{\"text\":\"Garish Havok (Weak)\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": false,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [6]
+            }
+        }
+    },
+    {
+        "name": "Turtle",
+        "gamemaster": {
+            "spawnEgg": "TURTLE_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:turtle_spawn_egg\",tag:{EntityTag:{id:\"minecraft:turtle\"},display:{Name:'{\"text\":\"Turtle\"}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": false,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": false,
+                    "isNight": false,
+                    "isMorning": true
+                },
+                "groups": [1, 1, 2, 1, 1]
+            }
+        }
+    },
+    {
+        "name": "Archaic Demi",
+        "gamemaster": {
+            "spawnEgg": "GUARDIAN_SPAWN_EGG",
+            "nbt": "{Count:1b,id:\"minecraft:guardian_spawn_egg\",tag:{EntityTag:{Attributes:[{Base:30,Name:\"generic.max_health\"},{Base:0.8d,Name:\"generic.knockback_resistance\"}],CustomName:'{\"text\":\"Archaic Demi\",\"color\":\"gray\"}',Health:30.0f,PersistenceRequired:1b,id:\"minecraft:guardian\"},display:{Name:'{\"text\":\"Archaic Demi\",\"italic\":false}'}}}",
+            "categories": ["1.0"]
+        },
+        "trash": {
+            "spawnMechanics": {
+                "isPersistent": false,
+                "despawnsAfterHours": 0,
+                "isSpawnWithLineOfSight": true,
+                "highestYLevel": 255,
+                "lowestYLevel": 0,
+                "timeToSpawn": {
+                    "isDay": true,
+                    "isEvening": true,
+                    "isNight": true,
+                    "isMorning": true
+                },
+                "groups": [2, 3, 1, 0]
+            }
+        }
+    }
+]

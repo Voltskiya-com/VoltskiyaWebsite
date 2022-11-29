@@ -1,45 +1,33 @@
-import mobsRaw from './gm/mobsDb2.json';
+import mobsRaw from './gm/mobs.json';
 
-interface InitialMob {
+export interface MobRaw {
     name: string;
-    categories?: string[];
-    material: string;
-    nbt: string;
-    isPersistent: boolean;
-    despawnsAfterHours: number;
-    isSpawnWithLineOfSight: boolean;
-    highestYLevel: number;
-    lowestYLevel: number;
-    timeToSpawn: {
-        isDay: boolean;
-        isEvening: boolean;
-        isNight: boolean;
-        isMorning: boolean;
-    };
-    groups: number[];
-}
-export interface Mob {
-    name: string;
-    spawnEggMaterial: string;
     gamemaster: {
         spawnEgg: string;
-        tags: string[];
         nbt: string;
         categories: string[];
     };
-    spawnMechanics: {
-        isPersistent: boolean;
-        despawnsAfterHours: number;
-        isSpawnWithLineOfSight: boolean;
-        highestYLevel: number;
-        lowestYLevel: number;
-        timeToSpawn: {
-            isDay: boolean;
-            isEvening: boolean;
-            isNight: boolean;
-            isMorning: boolean;
+    extra?: {
+        spawnMechanics: {
+            isPersistent: boolean;
+            despawnsAfterHours: number;
+            isSpawnWithLineOfSight: boolean;
+            highestYLevel: number;
+            lowestYLevel: number;
+            timeToSpawn: {
+                isDay: boolean;
+                isEvening: boolean;
+                isNight: boolean;
+                isMorning: boolean;
+            };
+            groups: number[];
         };
-        groups: number[];
+    };
+}
+export interface Mob extends MobRaw {
+    computed: {
+        giveCommand: string;
+        scoreboardTags: string[];
     };
 }
 function getTags(nbt: string): string[] {
@@ -53,27 +41,15 @@ function getTags(nbt: string): string[] {
     return tags.sort((t1, t2) => t1.localeCompare(t2));
 }
 const mapped: Mob[] = [];
-for (const mob of Object.values(mobsRaw) as InitialMob[]) {
+for (const mob of mobsRaw as MobRaw[]) {
     mapped.push({
-        name: mob.name,
-        spawnEggMaterial: mob.material,
-        gamemaster: {
-            nbt: mob.nbt,
-            spawnEgg: `/give @p ${mob.material.toLowerCase()}${mob.nbt} 1`,
-            tags: getTags(mob.nbt),
-            categories: mob.categories ?? [],
-        },
-        spawnMechanics: {
-            isPersistent: mob.isPersistent,
-            despawnsAfterHours: mob.despawnsAfterHours,
-            isSpawnWithLineOfSight: mob.isSpawnWithLineOfSight,
-            highestYLevel: mob.highestYLevel,
-            lowestYLevel: mob.lowestYLevel,
-            timeToSpawn: mob.timeToSpawn,
-            groups: mob.groups,
+        ...mob,
+        computed: {
+            giveCommand: `/give ${mob.gamemaster.spawnEgg}{${mob.gamemaster.nbt}} 64`,
+            scoreboardTags: getTags(mob.gamemaster.nbt),
         },
     });
 }
-export function getMappedJsonMobs() {
+export function getMappedJsonMobs(): Mob[] {
     return mapped;
 }

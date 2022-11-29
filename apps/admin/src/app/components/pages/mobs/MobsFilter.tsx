@@ -5,6 +5,7 @@ import { Dispatch, SetStateAction } from 'react';
 import { MobListFilter, useMobCategories } from './Mobs.store';
 
 export interface MobsFilterProps {
+    filter: MobListFilter;
     setFilter: Dispatch<SetStateAction<MobListFilter>>;
 }
 
@@ -22,14 +23,19 @@ export function MobsFilter(props: MobsFilterProps) {
 
     const categories: string[] = useMobCategories();
     return (
-        <Stack>
+        <Stack direction="row" alignItems="center">
             <Search onChange={setFilterName} />
-            <Stack>
+            <Stack flexWrap="wrap">
                 {categories.map((category) => (
                     <Chip
                         key={category}
                         onClick={() => toggleFilterTag(category)}
                         label={category}
+                        color={
+                            props.filter.categories.includes(category)
+                                ? 'default'
+                                : 'primary'
+                        }
                     />
                 ))}
             </Stack>

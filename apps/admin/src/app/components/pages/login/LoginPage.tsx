@@ -1,9 +1,11 @@
-import { AppButton, AppPaper, Page } from '@app/ui';
-import { TextField } from '@mui/material';
-import { SubmitHandler, useForm, UseFormHandleSubmit } from 'react-hook-form';
-import { Box, Paper, Stack } from '@mui/material';
 import { LoginRequest } from '@app/api';
+import { AppButton, CenterForm, Page } from '@app/ui';
+import { Stack, TextField } from '@mui/material';
+import { FormHTMLAttributes } from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
+
 import { authQuery } from '../../../api/auth/AuthQuery';
+
 export function LoginPage() {
     const { register, handleSubmit } = useForm<LoginRequest>();
     const onSubmit: SubmitHandler<LoginRequest> = (state) => {
@@ -11,27 +13,19 @@ export function LoginPage() {
     };
     return (
         <Page title="Login">
-            <Box>
-                <form onSubmit={handleSubmit(onSubmit)}>
-                    <Stack alignItems="center">
-                        <Paper sx={{ padding: 3 }}>
-                            <Stack spacing={1} alignItems="center">
-                                <TextField
-                                    {...register('username')}
-                                    label="username"
-                                />
-                                <TextField
-                                    {...register('password')}
-                                    label="password"
-                                />
-                                <AppButton type="submit" variant="contained">
-                                    Login
-                                </AppButton>
-                            </Stack>
-                        </Paper>
-                    </Stack>
-                </form>
-            </Box>
+            <CenterForm onSubmit={handleSubmit(onSubmit)}>
+                <Stack spacing={1} alignItems="center">
+                    <TextField {...register('username')} label="username" />
+                    <TextField
+                        {...register('password')}
+                        type="password"
+                        label="password"
+                    />
+                    <AppButton type="submit" variant="contained">
+                        Login
+                    </AppButton>
+                </Stack>
+            </CenterForm>
         </Page>
     );
 }
