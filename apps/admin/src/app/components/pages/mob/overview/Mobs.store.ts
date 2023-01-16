@@ -1,10 +1,17 @@
 import { useObservableMemo } from '@appleptr16/elemental';
-import { createStore } from '@ngneat/elf';
-import { selectAllEntities, withEntities } from '@ngneat/elf-entities';
+import { Optional } from '@appleptr16/utilities';
+import { createStore, select } from '@ngneat/elf';
+import {
+    getEntity,
+    selectAllEntities,
+    selectEntity,
+    withEntities,
+} from '@ngneat/elf-entities';
+import { useParams } from 'react-router-dom';
 import { map } from 'rxjs';
 
-import { sortOnKey } from '../../../util/sortOnKey';
-import { getMappedJsonMobs, Mob } from '../../database/mobs/MapJsonMobs';
+import { sortOnKey } from '../../../../util/sortOnKey';
+import { getMappedJsonMobs, Mob } from '../../../database/mobs/MapJsonMobs';
 
 const mobsStore = createStore(
     { name: 'Mobs' },
@@ -29,6 +36,13 @@ export function useMobList(filter: MobListFilter): Mob[] {
         []
     );
 }
+export function useMob(name: string): Optional<Mob> {
+    return useObservableMemo(
+        () => mobsStore.pipe(selectEntity(name)),
+        [mobsStore, name],
+        mobsStore.query(getEntity(name))
+    );
+}
 export function useMobCategories(): string[] {
     return useObservableMemo(
         () =>
@@ -43,4 +57,9 @@ export function useMobCategories(): string[] {
         [mobsStore],
         []
     );
+}
+export function useUrlMob(): Optional<Mob> {
+    const mobName: Optional<string> = useParams()['mob_name'];
+    if (!mobName) return undefined;
+    return useMob(mobName);
 }

@@ -7,6 +7,7 @@ export interface MobRaw {
         nbt: string;
         categories: string[];
     };
+    spawnerTags?: string[];
     extra?: {
         spawnMechanics: {
             isPersistent: boolean;

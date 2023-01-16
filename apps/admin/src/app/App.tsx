@@ -1,10 +1,13 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { CommandsPage } from './components/pages/commands/CommandsPage';
 import { LoginPage } from './components/pages/login/LoginPage';
-import { MobsPage } from './components/pages/mobs/MobsPage';
+import { MobInspectPage } from './components/pages/mob/inspect/MobInspectPage';
+import { MobsPage } from './components/pages/mob/overview/MobListPage';
+import { SpawnerListPage } from './components/pages/spawn/SpawnerListPage';
 
 import { OverviewPage } from './components/pages/overview/OverviewPage';
 import { urls } from './util/routes';
+import { SpawnerCreatePage } from './components/pages/spawn/create/SpawnerCreatePage';
 
 export function App() {
     return (
@@ -12,7 +15,13 @@ export function App() {
             <Routes>
                 <Route path={urls.home} element={<OverviewPage />} />
                 <Route path={urls.commands} element={<CommandsPage />} />
-                <Route path={urls.mobs} element={<MobsPage />} />
+                <Route path={urls.mob} element={<MobsPage />} />
+                <Route path={'/mob/:mob_name'} element={<MobInspectPage />} />
+                <Route path={'/spawn'} element={<SpawnerListPage />} />
+                <Route
+                    path={urls.spawn.create}
+                    element={<SpawnerCreatePage />}
+                />
                 <Route path={urls.login} element={<LoginPage />} />
             </Routes>
         </BrowserRouter>

@@ -18,7 +18,6 @@ function OverviewSection(props: OverviewSectionProps) {
                 spacing={1}
                 color="secondary.main"
             >
-                {/* <SectionHeader>{props.title}</SectionHeader> */}
                 {props.summary}
             </Stack>
         </AppPaper>

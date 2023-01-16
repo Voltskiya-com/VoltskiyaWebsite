@@ -1,10 +1,10 @@
-import { Page, Search } from '@app/ui';
+import { Page } from '@app/ui';
 import { Masonry } from '@mui/lab';
 import { Stack } from '@mui/material';
 import { useState } from 'react';
 
-import { Mob } from '../../database/mobs/MapJsonMobs';
-import { MobElement } from './Mob';
+import { Mob } from '../../../database/mobs/MapJsonMobs';
+import { MobCard } from './MobCard';
 import { MobListFilter, useMobList } from './Mobs.store';
 import { MobsFilter } from './MobsFilter';
 
@@ -27,11 +27,14 @@ export function MobsPage() {
     let mobs: Mob[] = useMobList(filter);
     mobs = filterMobs(mobs, filter);
     return (
-        <Page title="Mobs" extra={<MobsFilter filter={filter} setFilter={setFilter} />}>
+        <Page
+            title="Mobs"
+            extra={<MobsFilter filter={filter} setFilter={setFilter} />}
+        >
             <Stack direction="row">
                 <Masonry spacing={5}>
                     {mobs.map((mob: Mob) => (
-                        <MobElement key={mob.name} {...mob} />
+                        <MobCard key={mob.name} {...mob} />
                     ))}
                 </Masonry>
             </Stack>

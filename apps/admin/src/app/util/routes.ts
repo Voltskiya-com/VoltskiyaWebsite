@@ -1,7 +1,16 @@
 export const urls = {
     home: '/',
     commands: '/commands',
-    mobs: '/mobs',
+    mob: '/mob',
     login: '/login',
+    spawn: {
+        index: '/spawn',
+        create: '/spawn/create',
+    },
 };
-export const nav = {};
+
+export const nav = {
+    mob: {
+        inspect: (name: string): string => `/mob/${name}`,
+    },
+};

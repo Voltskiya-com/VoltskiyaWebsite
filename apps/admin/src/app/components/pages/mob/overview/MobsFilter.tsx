@@ -1,5 +1,6 @@
-import { Search } from '@app/ui';
-import { Chip, Stack } from '@mui/material';
+import { AppButton, Search } from '@app/ui';
+import { Box, Chip, Stack } from '@mui/material';
+import { Container } from '@mui/system';
 import { Dispatch, SetStateAction } from 'react';
 
 import { MobListFilter, useMobCategories } from './Mobs.store';
@@ -23,9 +24,9 @@ export function MobsFilter(props: MobsFilterProps) {
 
     const categories: string[] = useMobCategories();
     return (
-        <Stack direction="row" alignItems="center">
+        <Stack direction="row" alignItems="center" width="100%" spacing={5}>
             <Search onChange={setFilterName} />
-            <Stack flexWrap="wrap">
+            <Stack direction="row" flexWrap="wrap">
                 {categories.map((category) => (
                     <Chip
                         key={category}
@@ -33,12 +34,13 @@ export function MobsFilter(props: MobsFilterProps) {
                         label={category}
                         color={
                             props.filter.categories.includes(category)
-                                ? 'default'
-                                : 'primary'
+                                ? 'primary'
+                                : 'default'
                         }
                     />
                 ))}
             </Stack>
+            <AppButton variant="contained">Create Mob</AppButton>
         </Stack>
     );
 }

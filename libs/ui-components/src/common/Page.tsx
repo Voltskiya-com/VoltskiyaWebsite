@@ -9,13 +9,14 @@ export interface PageProps {
 }
 export function Page(props: PageProps) {
     return (
-        <Stack sx={{ padding: 5 }}>
-            <Stack direction="row" spacing={10} alignItems="center">
-                <AppTypography
-                    color="text.secondary"
-                    variant="h2"
-                    fontWeight={400}
-                >
+        <Box sx={{ padding: 5 }}>
+            <Stack
+                direction="row"
+                spacing={10}
+                alignItems="center"
+                flexGrow={1}
+            >
+                <AppTypography color="primary" variant="h2" fontWeight={400}>
                     {props.title}
                 </AppTypography>
                 {props.extra}
@@ -23,6 +24,6 @@ export function Page(props: PageProps) {
             <Divider />
             <br />
             {props.children}
-        </Stack>
+        </Box>
     );
 }

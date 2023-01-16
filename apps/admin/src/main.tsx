@@ -1,7 +1,6 @@
 import 'reflect-metadata';
 
-import { ThemeProvider } from '@emotion/react';
-import { Box, CssBaseline } from '@mui/material';
+import { Box, CssBaseline, ThemeProvider } from '@mui/material';
 import { enableElfProdMode } from '@ngneat/elf';
 import { StrictMode } from 'react';
 import { render } from 'react-dom';

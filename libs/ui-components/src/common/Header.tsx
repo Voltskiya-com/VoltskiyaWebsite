@@ -13,9 +13,9 @@ import { Logo } from './Logo';
 
 function AppLink(props: LinkProps) {
     const color =
-        location.pathname === props.route ? 'text.secondary' : 'text.primary';
+        location.pathname === props.route ? 'primary.main' : 'info.main';
     return (
-        <Button variant="text" color="secondary" href={props.route}>
+        <Button variant="text" href={props.route}>
             <AppTypography color={color} variant="h4">
                 {props.title}
             </AppTypography>
@@ -33,6 +33,7 @@ export interface HeaderProps {
     logo: string;
 }
 export function Header(props: HeaderProps) {
+    console.log(props.bgcolor);
     return (
         <Stack marginBottom={3}>
             <AppBar
