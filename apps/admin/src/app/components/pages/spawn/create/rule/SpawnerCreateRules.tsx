@@ -1,12 +1,12 @@
-import { AppButton, AppPaper, AppTypography } from '@app/ui';
+import { AppButton } from '@app/ui';
 import { Optional } from '@appleptr16/utilities';
 import { Close } from '@mui/icons-material';
-import { Stack, Box, Card, Select, MenuItem } from '@mui/material';
+import { Card, MenuItem, Select, Stack } from '@mui/material';
 import { ReactNode, useState } from 'react';
-import { useForm, useFormContext } from 'react-hook-form';
+import { useFormContext } from 'react-hook-form';
+
 import { SpawnerCreate } from '../../Spawner';
 import { SpawningRuleValues } from '../../SpawningRule';
-
 import { SpawnerCreateSectionRuleProps } from '../SpawnerCreateSection';
 import { BlockBlacklistRuleCard } from './BlockBlacklistRuleCard';
 import { BlockWhitelistRuleCard } from './BlockWhitelistRuleCard';
@@ -17,10 +17,20 @@ export function SpawnerCreateRules(
     let element: Optional<ReactNode> = undefined;
     switch (props.value.typeId) {
         case 'block_blacklist':
-            element = <BlockBlacklistRuleCard {...props.value} />;
+            element = (
+                <BlockBlacklistRuleCard
+                    index={props.index}
+                    value={props.value}
+                />
+            );
             break;
         case 'block_whitelist':
-            element = <BlockWhitelistRuleCard {...props.value} />;
+            element = (
+                <BlockWhitelistRuleCard
+                    index={props.index}
+                    value={props.value}
+                />
+            );
             break;
         case 'elevation':
             break;

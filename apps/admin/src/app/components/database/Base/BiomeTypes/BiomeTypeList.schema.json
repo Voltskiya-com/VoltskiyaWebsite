@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "$id": "BiomeTypes.schema.json",
+    "properties": {
+        "mapping": {
+            "type": "object",
+            "properties": {
+                "id\u003d$*": {
+                    "$ref": "./BiomeType.schema.json"
+                }
+            }
+        }
+    }
+}

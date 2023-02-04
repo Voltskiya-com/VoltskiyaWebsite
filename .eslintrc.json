@@ -7,6 +7,7 @@
             "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
             "rules": {
                 "no-restricted-globals": [],
+                "no-restricted-imports": "warn",
                 "@nrwl/nx/enforce-module-boundaries": [
                     "error",
                     {

@@ -1,6 +1,7 @@
-import { AppPaper, AppTypography, Page } from '@app/ui';
-import { Stack } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import { ReactNode } from 'react';
+import { FormatQuote } from '@mui/icons-material';
+import { AppPaper, AppTypography, Page } from '@app/ui';
 
 interface OverviewSectionProps {
     title: string;
@@ -17,7 +18,6 @@ function OverviewSection(props: OverviewSectionProps) {
                 spacing={1}
                 color="secondary.main"
             >
-                {/* <SectionHeader>{props.title}</SectionHeader> */}
                 {props.summary}
             </Stack>
         </AppPaper>

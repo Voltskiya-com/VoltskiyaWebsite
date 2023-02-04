@@ -1,12 +1,7 @@
 import { Page } from '@app/ui';
 import { Masonry } from '@mui/lab';
-import { Stack } from '@mui/material';
-import {
-    FormProvider,
-    SubmitHandler,
-    useFieldArray,
-    useForm,
-} from 'react-hook-form';
+import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
+
 import { SpawnerCreate } from '../Spawner';
 import { SpawnerCreateRules } from './rule/SpawnerCreateRules';
 import {
@@ -28,7 +23,7 @@ export function SpawnerCreatePage() {
         console.log(values);
     };
     return (
-        <Page title="Spawner/create">
+        <Page title="/spawner/create">
             <FormProvider {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)}>
                     <Masonry>

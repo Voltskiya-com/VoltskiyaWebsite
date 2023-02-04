@@ -1,0 +1,56 @@
+{
+    "micro_missiles": {
+        "description": "Shoot a flurry of tiny fire-particle missiles.",
+        "variants": ["micro_missiles"]
+    },
+    "warper": {
+        "description": "Suddenly warp randomly around a target whilst fighting",
+        "variants": ["warper"]
+    },
+    "blemish_gateway": {
+        "comments": "The particles around the blemish don't work",
+        "description": "A large flying enemy that fires flying enemies instead of ghast-fireballs",
+        "variants": ["blemish_gateway"]
+    },
+    "reviver": {
+        "description": "Revives enemies",
+        "variants": ["reviver.basic", "reviver.pulse"]
+    },
+    "firefangs": {
+        "description": "Summon a line of firey fangs",
+        "variants": [
+            "fire_fangs.basic",
+            "fire_fangs.triple",
+            "fire_fangs.triple_straight",
+            "fire_fangs.basic.blue",
+            "fire_fangs.triple.blue",
+            "fire_fangs.triple_straight.blue"
+        ]
+    },
+    "missile_laser": {
+        "description": "Launches a powerful flurry of missiles after warming up with a targetting laser",
+        "variants": ["missile_laser.normal", "missile_laser.overseer"]
+    },
+    "mancubus": {
+        "description": "Shoot a series of large fireballs",
+        "variants": ["mancubus.basic"]
+    },
+    "fireball": {
+        "description": "A simple ball of fire",
+        "variants": ["fireball.basic", "fireball.rapid"]
+    },
+    "orbital_strike": {
+        "comments": "Config may need to be updated yet",
+        "description": "A ring of raining fire",
+        "variants": [
+            "orbital_strike.small",
+            "orbital_strike.medium",
+            "orbital_strike.large"
+        ]
+    },
+    "leaps": {
+        "comments": "Variants may have multiple verisons each.",
+        "description": "Mobs can make strong jumps that are higher or farther",
+        "variants": ["leap.*", "leap.pounce.*", "leap.revenant.*"]
+    }
+}

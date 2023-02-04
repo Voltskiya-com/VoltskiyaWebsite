@@ -14,9 +14,15 @@ import { Logo } from './Logo';
 function AppLink(props: LinkProps) {
     const color =
         location.pathname === props.route ? 'primary.main' : 'info.main';
+    const target = props.route.startsWith('http') ? '_blank' : '_self';
     return (
-        <Button variant="text" href={props.route}>
-            <AppTypography color={color} variant="h4">
+        <Button variant="text" target={target} href={props.route}>
+            <AppTypography
+                color={color}
+                variant="h4"
+                textTransform="capitalize"
+                fontWeight={500}
+            >
                 {props.title}
             </AppTypography>
         </Button>
@@ -33,7 +39,6 @@ export interface HeaderProps {
     logo: string;
 }
 export function Header(props: HeaderProps) {
-    console.log(props.bgcolor);
     return (
         <Stack marginBottom={3}>
             <AppBar
@@ -54,7 +59,7 @@ export function Header(props: HeaderProps) {
                     </Box>
                     <Stack
                         justifyContent="flex-start"
-                        spacing={4}
+                        spacing={2}
                         alignItems="center"
                         direction="row"
                         divider={

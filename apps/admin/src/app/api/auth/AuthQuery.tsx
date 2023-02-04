@@ -1,9 +1,10 @@
 import { LoginRequest, LoginResponse, SessionBase } from '@app/api';
 import { setProp } from '@ngneat/elf';
+import { Buffer } from 'buffer';
 
 import { selfUserStore } from '../../elf/Session.store';
 import { AppQuery } from '../AppQuery';
-import { Buffer } from 'buffer';
+
 export class AuthQuery extends AppQuery {
     private async buildLogin(login: LoginRequest) {
         const encoded: string = Buffer.from(

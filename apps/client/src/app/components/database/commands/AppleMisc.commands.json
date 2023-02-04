@@ -1,0 +1,16 @@
+[
+    {
+        "name": "join",
+        "description": "Teleport to a spawn on the main world.",
+        "subCommands": {
+            "edit": {
+                "description": "Edit the spawning choices of players",
+                "subCommands": {
+                    "boxspawn": {},
+                    "gui": {},
+                    "mainworld": {}
+                }
+            }
+        }
+    }
+]

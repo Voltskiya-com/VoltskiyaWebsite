@@ -40,6 +40,7 @@ export function SpawnerCreateSection<Key extends FieldArrayPath<SpawnerCreate>>(
         });
     return (
         <Stack alignItems="center">
+            {props.name}
             <Container>
                 <AppButton
                     variant="contained"

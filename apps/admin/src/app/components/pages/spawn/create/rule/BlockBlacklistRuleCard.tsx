@@ -1,14 +1,21 @@
 import { AppTypography } from '@app/ui';
 import { Autocomplete, Chip, Input, Stack, TextField } from '@mui/material';
+import { useFormContext } from 'react-hook-form';
 
 import materials from '../../../../database/Material.json';
 import { BlockBlacklistRule } from '../../SpawningRule';
 
-export function BlockBlacklistRuleCard(props: BlockBlacklistRule) {
-    console.log(materials);
+export interface BlockBlacklistRuleCardProps {
+    index: string;
+    value: BlockBlacklistRule;
+}
+export function BlockBlacklistRuleCard(props: BlockBlacklistRuleCardProps) {
+    const { register } = useFormContext();
+
     return (
-        <Stack>
+        <Stack spacing={3}>
             <Autocomplete
+                {...register(`${props.index}.blocks`)}
                 renderInput={(params) => (
                     <TextField {...params} label="blocks" />
                 )}
@@ -19,7 +26,7 @@ export function BlockBlacklistRuleCard(props: BlockBlacklistRule) {
                 multiple
                 options={materials}
             />
-            {props.blocks?.map((block) => (
+            {props.value.blocks?.map((block) => (
                 <Chip label={block} />
             ))}
         </Stack>

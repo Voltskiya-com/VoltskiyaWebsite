@@ -5,8 +5,8 @@ import { navTo } from './nav';
 export function RouteRules() {
     const isLoggedIn: Optional<boolean> = useIsLoggedIn();
 
-    if (isLoginPage()) verifyNotLoggedIn(isLoggedIn);
-    if (isAuthorizedPage()) verifyLoggedIn(isLoggedIn);
+    // if (isLoginPage()) verifyNotLoggedIn(isLoggedIn);
+    // if (isAuthorizedPage()) verifyLoggedIn(isLoggedIn);
 
     return null;
 }

@@ -1,0 +1,7 @@
+{
+    "bow_like_move": {
+        "comments": "requirements: Must be Monster & RangedAttackMob",
+        "description": "I have a bow, I swear!!!",
+        "variants": ["bow_like_move"]
+    }
+}

@@ -14,7 +14,7 @@ export function AppHeader() {
                 { route: '/commands', title: 'Commands' },
                 { route: '/mobs', title: 'Mobs' },
                 { route: 'https://gm.voltskiya.com', title: '/gm' },
-                { route: 'https://api.voltskiya.com', title: '/api' },
+                { route: 'https://map.voltskiya.com', title: 'Map' },
             ]}
             bgcolor={bgcolor}
             logo={logo}
