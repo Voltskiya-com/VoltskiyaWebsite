@@ -1,20 +1,56 @@
+import { Box } from '@mui/material';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import { OverviewPage } from './components/pages/overview/OverviewPage';
-import { urls } from './util/routes';
-import { CommandsPage } from './components/pages/commands/CommandsPage';
-import { MobsPage } from './components/pages/mob/overview/MobPage';
+import { AppHeader } from './AppHeader';
+import { UrlRoute, urls } from './util/routes';
 
-export function App() {
+interface AppRoutesProps {
+    thisRoute: UrlRoute;
+    routes: Record<string, UrlRoute>;
+}
+function AppRoutes(props: AppRoutesProps) {
+    if (props.thisRoute.fullRoute === location.pathname) {
+        return <props.thisRoute.render />;
+    }
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path={urls.home} element={<OverviewPage />} />
-                <Route path={urls.commands} element={<CommandsPage />} />
-                <Route path={urls.mobs} element={<MobsPage />} />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            {Object.values(props.routes).map((route: UrlRoute) => {
+                return (
+                    <Route
+                        key={route.route}
+                        path={route.route + '/*'}
+                        element={
+                            <AppRoutes
+                                thisRoute={route}
+                                routes={route.divisions ?? {}}
+                            />
+                        }
+                    />
+                );
+            })}
+        </Routes>
     );
 }
 
+export function App() {
+    const pathname = location.pathname;
+    if (pathname.endsWith('/')) {
+        history.pushState({}, '', pathname.substring(0, pathname.length - 1));
+    }
+    return (
+        <Box>
+            <AppHeader />
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="*"
+                        element={
+                            <AppRoutes thisRoute={urls.Home} routes={urls} />
+                        }
+                    />
+                </Routes>
+            </BrowserRouter>
+        </Box>
+    );
+}
 export default App;

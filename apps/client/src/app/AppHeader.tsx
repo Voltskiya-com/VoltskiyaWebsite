@@ -5,16 +5,17 @@ import logo from '../assets/common/Logo.png';
 import { urls } from './util/routes';
 
 export function AppHeader() {
-    const bgcolor = useTheme().palette.grey[900];
+    const palette = useTheme().palette;
+    const bgcolor = palette.grey[900];
+    console.log(palette.background);
     return (
         <Header
-            home={{ route: urls.home, title: 'Voltskiya' }}
+            home={urls.Home}
             links={[
-                { route: '/', title: 'Home' },
-                { route: '/commands', title: 'Commands' },
-                { route: '/mobs', title: 'Mobs' },
-                { route: 'https://gm.voltskiya.com', title: '/gm' },
-                { route: 'https://map.voltskiya.com', title: 'Map' },
+                urls.Home,
+                urls.Features,
+                urls.Tools,
+                { fullRoute: 'https://map.voltskiya.com', title: 'Map' },
             ]}
             bgcolor={bgcolor}
             logo={logo}

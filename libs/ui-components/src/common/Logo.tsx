@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, useTheme } from '@mui/material';
 
 export interface LogoProps {
     href: string;
@@ -13,6 +13,8 @@ export function Logo(props: LogoProps) {
                     src={props.img}
                     alt="Logo"
                     style={{
+                        width: '100%',
+                        height: '100%',
                         border: '3px',
                         borderStyle: 'solid',
                         borderRadius: '50%',

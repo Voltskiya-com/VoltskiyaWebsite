@@ -10,7 +10,7 @@ export function MobsPage() {
     return (
         <Page
             title="Mobs"
-            description="A list of mob abilities. Abilities can be mix and matched to create mobs"
+            description="A list of mob abilities. Gamemasters mix and match abilities to create mobs."
         >
             <Stack direction="row">
                 <Masonry defaultColumns={3} spacing={5}>

@@ -25,12 +25,14 @@ function OverviewSection(props: OverviewSectionProps) {
 }
 export function OverviewPage() {
     return (
-        <Page title="Overview">
+        <Page title="Welcome!">
             <Stack direction="row" spacing={3}>
                 <OverviewSection
                     title="Goal"
                     summary={
-                        <AppTypography fontWeight={500}>Hello</AppTypography>
+                        <AppTypography>
+                            Voltskiya is a harder survival experience.
+                        </AppTypography>
                     }
                 />
             </Stack>

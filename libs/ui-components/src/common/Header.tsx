@@ -6,89 +6,54 @@ import {
     Divider,
     Link,
     Stack,
+    useTheme,
 } from '@mui/material';
 
 import { AppTypography } from '../base/AppTypography';
+import { TopHeaderBar } from './header/TopHeaderBar';
 import { Logo } from './Logo';
+import { TopHeaderLinkProps } from './header/TopHeaderLink';
+import { SubHeaderBar } from './header/SubHeaderBar';
 
-function AppLink(props: LinkProps) {
-    const color =
-        location.pathname === props.route ? 'primary.main' : 'info.main';
-    const target = props.route.startsWith('http') ? '_blank' : '_self';
-    return (
-        <Button variant="text" target={target} href={props.route}>
-            <AppTypography
-                color={color}
-                variant="h4"
-                textTransform="capitalize"
-                fontWeight={500}
-            >
-                {props.title}
-            </AppTypography>
-        </Button>
-    );
-}
-export interface LinkProps {
-    route: string;
-    title: string;
-}
+export type HeaderLinkProps = Omit<TopHeaderLinkProps, 'depth'>;
 export interface HeaderProps {
-    home: LinkProps;
-    links: LinkProps[];
+    home: HeaderLinkProps;
+    links: HeaderLinkProps[];
     bgcolor: string;
     logo: string;
 }
+
 export function Header(props: HeaderProps) {
+    const bgcolorlight = useTheme().palette.augmentColor({
+        color: { main: props.bgcolor },
+    }).light;
     return (
         <Stack marginBottom={3}>
-            <AppBar
-                position="static"
-                sx={{
-                    height: '4rem',
-                    bgcolor: props.bgcolor,
-                    zIndex: (theme) => theme.zIndex.appBar,
-                }}
-            >
-                <Stack direction="row">
-                    <Box height="4rem" width="7.5rem">
-                        <Logo
-                            size="7.5rem"
-                            href={props.home.route}
-                            img={props.logo}
-                        />
-                    </Box>
-                    <Stack
-                        justifyContent="flex-start"
-                        spacing={2}
-                        alignItems="center"
-                        direction="row"
-                        divider={
-                            <Divider
-                                flexItem
-                                orientation="vertical"
-                                variant="fullWidth"
-                            />
-                        }
-                    >
-                        {props.links.map((link) => (
-                            <AppLink key={link.route} {...link} />
-                        ))}
-                    </Stack>
-                </Stack>
-            </AppBar>
             <Box
-                alignSelf="start"
-                height="auto"
-                width="auto"
-                bgcolor={props.bgcolor}
+                position="absolute"
+                bgcolor={({ palette }) => palette.background.default}
+                zIndex={({ zIndex }) => zIndex.appBar + 1}
+                borderRadius="0 100% 100% 0"
+            >
+                <Logo
+                    size="8rem"
+                    href={props.home.fullRoute}
+                    img={props.logo}
+                />
+            </Box>
+            <TopHeaderBar {...props} />
+            <SubHeaderBar {...props} bgcolor={bgcolorlight} />
+            <Box
+                alignSelf="end"
+                bgcolor={bgcolorlight}
                 zIndex={(theme) => theme.zIndex.appBar - 1000}
-                sx={{ transform: 'perspective(10px) rotateX(-1deg)' }}
                 paddingLeft="2.5rem"
                 paddingRight="2.5rem"
                 paddingBottom={1}
-                marginLeft="7.5rem"
+                marginRight="25%"
+                sx={{ transform: 'perspective(10px) rotateX(-1deg)' }}
             >
-                <Link href={props.home.route} color="secondary">
+                <Link href={props.home.fullRoute} color="secondary">
                     <AppTypography
                         fontWeight={500}
                         sx={{
