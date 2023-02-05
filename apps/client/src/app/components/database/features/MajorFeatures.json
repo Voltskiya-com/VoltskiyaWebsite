@@ -1,0 +1,52 @@
+{
+    "Mob System v4?": {
+        "status": "Current",
+        "completion": 70,
+        "description": "Spawn custom mobs in biomes according to configuration rules"
+    },
+    "Lootchest restocking": {
+        "completion": 80,
+        "status": "Current",
+        "description": "Restock lootchests on a timer with random"
+    },
+    "Temperature": {
+        "completion": 90,
+        "status": "Needs Update",
+        "description": "Players must worry about being too hot or too cold"
+    },
+    "Tribes": {
+        "completion": 30,
+        "status": "Current",
+        "description": "Players can create/join tribes with each other to disable PvP friendly-fire. Integrates with WorldGuard to prevent griefing"
+    },
+    "Thirst": {
+        "completion": 100,
+        "status": "Completed",
+        "description": "Players lose thirst over time, which debuffs them according to their thirst level"
+    },
+    "Stamina": {
+        "completion": 100,
+        "status": "Completed",
+        "description": "Players run out of sprint"
+    },
+    "Mob xp": {
+        "completion": 100,
+        "status": "Completed",
+        "description": "Mobs drop different amounts of experience"
+    },
+    "Chat": {
+        "completion": 0,
+        "status": "Planned",
+        "description": "Update chat and tab to make it look nicer"
+    },
+    "Decay": {
+        "completion": 0,
+        "status": "Planned",
+        "description": "Player bases will decay and blocks will return to their original state. Preventative measures can be taken to slow/stop this process for an area"
+    },
+    "Dungeon replayability": {
+        "completion": 0,
+        "status": "Planned",
+        "description": "Already created Dungeons will be replayable and will not require a Gamemaster to enter."
+    }
+}

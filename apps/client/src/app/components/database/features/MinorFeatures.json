@@ -1,0 +1,17 @@
+{
+    "Cow/Goat milk": {
+        "description": "Cows and goats can be milked with glass bottles"
+    },
+    "Infinite Potions": {
+        "description": "Potions enchanted with infinity are infinite"
+    },
+    "Shield Block Delay": {
+        "description": "Shield block delay is disabled"
+    },
+    "Coral Fade": {
+        "description": "Coral does not fade"
+    },
+    "Mob Anger": {
+        "description": "Mobs get mad at things that hurt it. (unless it's current target is closer)"
+    }
+}

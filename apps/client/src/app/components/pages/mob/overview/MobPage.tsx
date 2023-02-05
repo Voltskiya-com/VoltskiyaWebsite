@@ -12,13 +12,11 @@ export function MobsPage() {
             title="Mobs"
             description="A list of mob abilities. Gamemasters mix and match abilities to create mobs."
         >
-            <Stack direction="row">
-                <Masonry defaultColumns={3} spacing={5}>
-                    {mobs.map((mob: MobSkill) => (
-                        <MobCard key={mob.name} mob={mob} />
-                    ))}
-                </Masonry>
-            </Stack>
+            <Masonry defaultColumns={3} spacing={5}>
+                {mobs.map((mob: MobSkill) => (
+                    <MobCard key={mob.name} mob={mob} />
+                ))}
+            </Masonry>
         </Page>
     );
 }

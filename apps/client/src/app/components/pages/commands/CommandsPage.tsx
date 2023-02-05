@@ -36,6 +36,7 @@ export function CommandsPage() {
                 >
                     {commands.map((command: Command) => (
                         <TreeItem
+                            key={command.name}
                             nodeId={command.name}
                             label={
                                 <CommandElement
