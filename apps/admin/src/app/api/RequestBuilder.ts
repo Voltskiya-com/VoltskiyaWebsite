@@ -1,6 +1,5 @@
 import { AppException, AppResponse } from '@app/api';
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
-import { StatusCodes } from 'http-status-codes';
 
 export enum RequestMethod {
     Get = 'get',
@@ -97,6 +96,6 @@ function convertError(error: any) {
     const status = response.status;
     return { ...response.data, status, isOk: isOk(status) };
 }
-function isOk(status: StatusCodes) {
-    return status === StatusCodes.OK || status === StatusCodes.CREATED;
+function isOk(status: number) {
+    return status === 200 || status === 201;
 }

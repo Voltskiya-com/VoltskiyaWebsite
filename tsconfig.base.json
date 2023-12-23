@@ -23,10 +23,9 @@
         "noErrorTruncation": true,
         "baseUrl": ".",
         "paths": {
-            "@app/api": ["libs/api/src/index.ts"],
-            "@app/ui": ["libs/ui-components/src/index.ts"],
-            "@appleptr16/elemental": ["libs/elemental/src/index.ts"],
-            "@appleptr16/utilities": ["libs/utilities/src/index.ts"]
+            "@app/util": ["libs/utilities/src/index.ts"],
+            "@app/ui": ["libs/app-ui/src/index.ts"],
+            "@app/api": ["libs/api/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]

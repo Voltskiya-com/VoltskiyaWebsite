@@ -1,0 +1,34 @@
+{
+    "root": "libs/app-ui",
+    "sourceRoot": "libs/app-ui/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "@nrwl/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "outputPath": "dist/libs/app-ui",
+                "tsConfig": "libs/app-ui/tsconfig.lib.json",
+                "packageJson": "libs/app-ui/package.json",
+                "main": "libs/app-ui/src/index.ts",
+                "assets": ["libs/app-ui/*.md"]
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["libs/app-ui/**/*.ts"]
+            }
+        },
+        "app-ui": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/app-ui"],
+            "options": {
+                "jestConfig": "libs/app-ui/jest.config.js",
+                "passWithNoapp-uis": true
+            }
+        }
+    },
+    "tags": []
+}

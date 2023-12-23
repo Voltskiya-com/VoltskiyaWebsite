@@ -1,16 +1,7 @@
 import { AppButton } from '@app/ui';
-import { Close } from '@mui/icons-material';
 import { Container, Stack } from '@mui/material';
 import { ReactNode } from 'react';
-import {
-    FieldArrayPath,
-    FieldArrayPathValue,
-    PathValue,
-    useFieldArray,
-    useFormContext,
-    UseFormRegister,
-    UseFormRegisterReturn,
-} from 'react-hook-form';
+import { FieldArrayPath, useFieldArray, useFormContext } from 'react-hook-form';
 
 import { SpawnerCreate } from '../Spawner';
 
@@ -49,7 +40,7 @@ export function SpawnerCreateSection<Key extends FieldArrayPath<SpawnerCreate>>(
                     New
                 </AppButton>
             </Container>
-            {fields.map((field, index) => (
+            {fields.map((field: any, index: any) => (
                 <Stack key={field.id} direction="column">
                     {props.mapValue({
                         index: `${props.name}.${index}`,

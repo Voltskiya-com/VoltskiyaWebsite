@@ -1,0 +1,333 @@
+{
+    "minecraft:frozen_ocean": {
+        "icon": { "name": "Icebergs", "material": "BLUE_ICE" },
+        "mobs": {
+            "Glowsquid": 4,
+            "Squid": 2,
+            "Penguin": 5,
+            "Snow Fox": 5,
+            "Snowy Rabbit": 4,
+            "Cod": 7,
+            "Wild Bear": 3
+        },
+        "spawnRate": 15,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": -45 },
+            "MIDNIGHT": { "degrees": -120 },
+            "NOON": { "degrees": -30 },
+            "EVENING": { "degrees": -70 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 41
+    },
+    "minecraft:savanna_plateau": {
+        "icon": { "name": "Badlands", "material": "DEAD_BUSH" },
+        "mobs": {
+            "Buzzard": 2,
+            "Pardosa": 4,
+            "Mule": 1,
+            "Donkey": 1,
+            "Rabbit": 7,
+            "Cow": 5,
+            "Decrepit Husk": 5,
+            "Shambling Husk": 5
+        },
+        "spawnRate": 10,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 35 },
+            "MIDNIGHT": { "degrees": -55 },
+            "NOON": { "degrees": 125 },
+            "EVENING": { "degrees": 65 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 9
+    },
+    "minecraft:taiga": {
+        "icon": { "name": "Spruce Forest", "material": "SPRUCE_LOG" },
+        "mobs": {
+            "Accipiter": 2,
+            "Rabbit": 9,
+            "Carno": 2,
+            "Chicken": 4,
+            "Cow": 5,
+            "Fox": 3,
+            "Tarantula": 4,
+            "Mane": 4
+        },
+        "spawnRate": 16,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": -5 },
+            "MIDNIGHT": { "degrees": -25 },
+            "NOON": { "degrees": 20 },
+            "EVENING": { "degrees": 5 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 14
+    },
+    "minecraft:wooded_mountains": {
+        "icon": { "name": "Douglas Fir", "material": "LARGE_FERN" },
+        "mobs": {
+            "Flike": 2,
+            "Accipiter": 4,
+            "Direwolf": 5,
+            "Rabbit": 8,
+            "Carno": 3,
+            "Chicken": 7,
+            "Cow": 4,
+            "Fox": 4,
+            "Mane": 7,
+            "Wild Bear": 4
+        },
+        "spawnRate": 14,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 5 },
+            "MIDNIGHT": { "degrees": -20 },
+            "NOON": { "degrees": 20 },
+            "EVENING": { "degrees": 5 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 40
+    },
+    "minecraft:savanna": {
+        "icon": { "name": "Wastefield", "material": "COARSE_DIRT" },
+        "mobs": {
+            "Chicken": 6,
+            "Dilopha": 9,
+            "Decrepit Husk": 4,
+            "Shambling Husk": 4,
+            "Limus": 7,
+            "Dukkar": 3,
+            "Pig": 4,
+            "Sandpiper": 4
+        },
+        "spawnRate": 7,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 15 },
+            "MIDNIGHT": { "degrees": -25 },
+            "NOON": { "degrees": 30 },
+            "EVENING": { "degrees": 10 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 35
+    },
+    "minecraft:swamp": {
+        "icon": { "name": "Marshland", "material": "SMALL_DRIPLEAF" },
+        "mobs": {
+            "Sarko": 1,
+            "Crocodile": 8,
+            "Chicken": 4,
+            "Decipio": 3,
+            "Dilopha": 3,
+            "Limus": 4,
+            "Swarmth": 17,
+            "Brown Axolotl": 5,
+            "Dukkar": 3,
+            "Pompeius": 3,
+            "Pig": 5
+        },
+        "spawnRate": 15,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 20 },
+            "MIDNIGHT": { "degrees": -20 },
+            "NOON": { "degrees": 35 },
+            "EVENING": { "degrees": 10 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 42
+    },
+    "minecraft:plains": {
+        "icon": { "name": "Central Plains", "material": "GRASS_BLOCK" },
+        "mobs": {
+            "Horse": 1,
+            "Rabbit": 4,
+            "Chicken": 3,
+            "Cow": 6,
+            "Tarantula": 3,
+            "Mane": 4
+        },
+        "spawnRate": 0,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 15 },
+            "MIDNIGHT": { "degrees": -15 },
+            "NOON": { "degrees": 30 },
+            "EVENING": { "degrees": 5 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 24
+    },
+    "minecraft:badlands_plateau": {
+        "icon": { "name": "Badlands", "material": "DEAD_BUSH" },
+        "mobs": {
+            "Buzzard": 2,
+            "Pardosa": 4,
+            "Mule": 1,
+            "Donkey": 1,
+            "Rabbit": 7,
+            "Cow": 5,
+            "Decrepit Husk": 5,
+            "Shambling Husk": 5
+        },
+        "spawnRate": 10,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 35 },
+            "MIDNIGHT": { "degrees": -55 },
+            "NOON": { "degrees": 125 },
+            "EVENING": { "degrees": 65 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 9
+    },
+    "minecraft:lukewarm_ocean": {
+        "icon": {
+            "name": "Warm Ocean",
+            "material": "LIGHT_BLUE_STAINED_GLASS"
+        },
+        "mobs": {
+            "Turtle": 4,
+            "Archaic Demi": 4,
+            "Tropical Fish 3": 7,
+            "Tropical Fish 2": 7,
+            "Dolphin": 2,
+            "Depthcharge": 4,
+            "Tropical Fish 1": 7,
+            "Shark": 4,
+            "Tropical Fish 4": 7,
+            "Squid": 3,
+            "Cod": 2,
+            "Axolotl": 5,
+            "Imum": 3
+        },
+        "spawnRate": 20,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 10 },
+            "MIDNIGHT": { "degrees": 5 },
+            "NOON": { "degrees": 30 },
+            "EVENING": { "degrees": 15 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 36
+    },
+    "minecraft:deep_ocean": {
+        "icon": { "name": "Base Ocean", "material": "BLUE_STAINED_GLASS" },
+        "mobs": {
+            "Archaic Demi": 5,
+            "Glowsquid": 3,
+            "Squid": 19,
+            "Dolphin": 6,
+            "Depthcharge": 1,
+            "Shark": 7,
+            "Cod": 20,
+            "Axolotl": 8,
+            "Imum": 2
+        },
+        "spawnRate": 20,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 0 },
+            "MIDNIGHT": { "degrees": -35 },
+            "NOON": { "degrees": 5 },
+            "EVENING": { "degrees": -10 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 29
+    },
+    "minecraft:ocean": {
+        "icon": { "name": "Base Ocean", "material": "BLUE_STAINED_GLASS" },
+        "mobs": {
+            "Archaic Demi": 5,
+            "Glowsquid": 3,
+            "Squid": 19,
+            "Dolphin": 6,
+            "Depthcharge": 1,
+            "Shark": 7,
+            "Cod": 20,
+            "Axolotl": 8,
+            "Imum": 2
+        },
+        "spawnRate": 20,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 0 },
+            "MIDNIGHT": { "degrees": -35 },
+            "NOON": { "degrees": 5 },
+            "EVENING": { "degrees": -10 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 29
+    },
+    "minecraft:snowy_taiga": {
+        "icon": { "name": "Snowy Mountains", "material": "POWDER_SNOW_BUCKET" },
+        "mobs": {
+            "Aquila": 1,
+            "Accipiter": 4,
+            "Potenaur": 3,
+            "Direwolf": 6,
+            "Apexora": 1,
+            "Snow Fox": 8,
+            "Carno": 4,
+            "Snowy Rabbit": 10,
+            "Cow": 8,
+            "Dukkar": 2,
+            "Wild Bear": 8,
+            "Mane": 7,
+            "Pig": 9,
+            "Preado": 1,
+            "Yutyronus": 2,
+            "Horse": 2,
+            "Mountain Llama": 7,
+            "Ospreyer": 3,
+            "Goat": 8
+        },
+        "spawnRate": 9,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": -105 },
+            "MIDNIGHT": { "degrees": -120 },
+            "NOON": { "degrees": -85 },
+            "EVENING": { "degrees": -105 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 6
+    },
+    "minecraft:wooded_badlands_plateau": {
+        "icon": { "name": "Badlands", "material": "DEAD_BUSH" },
+        "mobs": {
+            "Buzzard": 2,
+            "Pardosa": 4,
+            "Mule": 1,
+            "Donkey": 1,
+            "Rabbit": 7,
+            "Cow": 5,
+            "Decrepit Husk": 5,
+            "Shambling Husk": 5
+        },
+        "spawnRate": 10,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 35 },
+            "MIDNIGHT": { "degrees": -55 },
+            "NOON": { "degrees": 125 },
+            "EVENING": { "degrees": 65 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 9
+    },
+    "minecraft:wooded_hills": {
+        "icon": { "name": "Southern Plains", "material": "GRASS" },
+        "mobs": {
+            "Flike": 2,
+            "Pouncing Widow": 1,
+            "Rabbit": 5,
+            "Chicken": 4,
+            "Cow": 3,
+            "Dilopha": 1,
+            "Fox": 2,
+            "Mane": 3
+        },
+        "spawnRate": 7,
+        "dailyTemperatures": {
+            "MORNING": { "degrees": 25 },
+            "MIDNIGHT": { "degrees": -10 },
+            "NOON": { "degrees": 28 },
+            "EVENING": { "degrees": 15 }
+        },
+        "windInfo": { "kphMin": 0, "kphMax": 0 },
+        "biomeUid": 21
+    }
+}

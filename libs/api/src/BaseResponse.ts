@@ -1,7 +1,6 @@
-import { StatusCodes } from 'http-status-codes';
 import { SessionBase } from './auth/SessionBase';
 
-export type BadStatusCode = Exclude<StatusCodes, StatusCodes.OK>;
+export type BadStatusCode = Exclude<number, 200>;
 export interface AppException {
     message: string;
     status: BadStatusCode;
@@ -9,7 +8,7 @@ export interface AppException {
     extra?: unknown;
 }
 export type AppResponseOK<T = unknown> = {
-    status: StatusCodes.OK;
+    status: 200;
     session: SessionBase;
     isOk: true;
 } & T;
@@ -19,7 +18,7 @@ export function okResponse<T>(res: T, session: SessionBase): AppResponseOK<T> {
     return {
         ...res,
         session,
-        status: StatusCodes.OK,
+        status: 200,
         isOk: true,
     };
 }

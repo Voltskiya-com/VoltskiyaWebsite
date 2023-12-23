@@ -4,9 +4,9 @@ import {
     getMappedMajorFeature,
     getMappedMinorFeature,
 } from '../../database/features/getMappedFeature';
-import { useObservableMemo } from '../../../../../../../libs/elemental/src/lib/observeable/useObservableMemo';
 import { map } from 'rxjs';
-import { sortOnKey } from '../../../../../../admin/src/app/util/sortOnKey';
+import { useObservableMemo } from '@app/util';
+import { sortOnKey } from '../../../util/sortOnKey';
 export interface MajorFeature {
     name: string;
     completion: number;
@@ -29,7 +29,9 @@ export function useMajorFeatureList(): MajorFeature[] {
         () =>
             majorFeatureStore.pipe(
                 selectAllEntities(),
-                map((entities) => sortOnKey(entities, 'name', ''))
+                map((entities: MajorFeature[]) =>
+                    sortOnKey(entities, 'name', '')
+                )
             ),
         [majorFeatureStore],
         []
@@ -47,7 +49,9 @@ export function useMinorFeatureList(): MinorFeature[] {
         () =>
             minorFeatureStore.pipe(
                 selectAllEntities(),
-                map((entities) => sortOnKey(entities, 'name', ''))
+                map((entities: MinorFeature[]) =>
+                    sortOnKey(entities, 'name', '')
+                )
             ),
         [majorFeatureStore],
         []

@@ -1,4 +1,4 @@
-import { useObservableMemo } from '@appleptr16/elemental';
+import { useObservableMemo } from '@app/util';
 import { createStore } from '@ngneat/elf';
 import { selectAllEntities, withEntities } from '@ngneat/elf-entities';
 import { map } from 'rxjs';

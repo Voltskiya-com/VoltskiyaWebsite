@@ -1,0 +1,269 @@
+{
+    "effects": [
+        {
+            "potion": "wither",
+            "amplifier": 2,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": 130
+        },
+        {
+            "potion": "blindness",
+            "amplifier": 0,
+            "duration": 50,
+            "interval": 100,
+            "activationLowerBound": 130
+        },
+        {
+            "potion": "nausea",
+            "amplifier": 1,
+            "duration": 210,
+            "interval": 220,
+            "activationLowerBound": 130
+        },
+        {
+            "potion": "hunger",
+            "amplifier": 3,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": 130
+        },
+        {
+            "potion": "wither",
+            "amplifier": 1,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": 120,
+            "activationUpperBound": 130
+        },
+        {
+            "potion": "blindness",
+            "amplifier": 0,
+            "duration": 50,
+            "interval": 100,
+            "activationLowerBound": 120,
+            "activationUpperBound": 130
+        },
+        {
+            "potion": "nausea",
+            "amplifier": 1,
+            "duration": 210,
+            "interval": 220,
+            "activationLowerBound": 120,
+            "activationUpperBound": 130
+        },
+        {
+            "potion": "hunger",
+            "amplifier": 3,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": 120,
+            "activationUpperBound": 130
+        },
+        {
+            "potion": "wither",
+            "amplifier": 0,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": 100,
+            "activationUpperBound": 120
+        },
+        {
+            "potion": "blindness",
+            "amplifier": 0,
+            "duration": 40,
+            "interval": 140,
+            "activationLowerBound": 100,
+            "activationUpperBound": 120
+        },
+        {
+            "potion": "nausea",
+            "amplifier": 1,
+            "duration": 210,
+            "interval": 220,
+            "activationLowerBound": 100,
+            "activationUpperBound": 120
+        },
+        {
+            "potion": "hunger",
+            "amplifier": 2,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": 100,
+            "activationUpperBound": 120
+        },
+        {
+            "potion": "blindness",
+            "amplifier": 0,
+            "duration": 35,
+            "interval": 140,
+            "activationLowerBound": 85,
+            "activationUpperBound": 100
+        },
+        {
+            "potion": "nausea",
+            "amplifier": 1,
+            "duration": 210,
+            "interval": 400,
+            "activationLowerBound": 85,
+            "activationUpperBound": 100
+        },
+        {
+            "potion": "hunger",
+            "amplifier": 2,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": 85,
+            "activationUpperBound": 100
+        },
+        {
+            "potion": "nausea",
+            "amplifier": 0,
+            "duration": 210,
+            "interval": 220,
+            "activationLowerBound": 70,
+            "activationUpperBound": 85
+        },
+        {
+            "potion": "hunger",
+            "amplifier": 1,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": 70,
+            "activationUpperBound": 85
+        },
+        {
+            "potion": "hunger",
+            "amplifier": 1,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": 55,
+            "activationUpperBound": 70
+        },
+        {
+            "potion": "hunger",
+            "amplifier": 0,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": 35,
+            "activationUpperBound": 55
+        },
+        {
+            "potion": "wither",
+            "amplifier": 2,
+            "duration": 200,
+            "interval": 0,
+            "activationUpperBound": -130
+        },
+        {
+            "potion": "mining_fatigue",
+            "amplifier": 1,
+            "duration": 210,
+            "interval": 0,
+            "activationUpperBound": -130
+        },
+        {
+            "potion": "slowness",
+            "amplifier": 3,
+            "duration": 200,
+            "interval": 0,
+            "activationUpperBound": -130
+        },
+        {
+            "potion": "wither",
+            "amplifier": 1,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": -130,
+            "activationUpperBound": -120
+        },
+        {
+            "potion": "mining_fatigue",
+            "amplifier": 1,
+            "duration": 210,
+            "interval": 0,
+            "activationLowerBound": -130,
+            "activationUpperBound": -120
+        },
+        {
+            "potion": "slowness",
+            "amplifier": 3,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": -130,
+            "activationUpperBound": -120
+        },
+        {
+            "potion": "wither",
+            "amplifier": 0,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": -120,
+            "activationUpperBound": -100
+        },
+        {
+            "potion": "mining_fatigue",
+            "amplifier": 1,
+            "duration": 210,
+            "interval": 0,
+            "activationLowerBound": -120,
+            "activationUpperBound": -100
+        },
+        {
+            "potion": "slowness",
+            "amplifier": 2,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": -120,
+            "activationUpperBound": -100
+        },
+        {
+            "potion": "mining_fatigue",
+            "amplifier": 1,
+            "duration": 60,
+            "interval": 0,
+            "activationLowerBound": -100,
+            "activationUpperBound": -85
+        },
+        {
+            "potion": "slowness",
+            "amplifier": 2,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": -100,
+            "activationUpperBound": -85
+        },
+        {
+            "potion": "mining_fatigue",
+            "amplifier": 0,
+            "duration": 210,
+            "interval": 0,
+            "activationLowerBound": -85,
+            "activationUpperBound": -70
+        },
+        {
+            "potion": "slowness",
+            "amplifier": 1,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": -85,
+            "activationUpperBound": -70
+        },
+        {
+            "potion": "slowness",
+            "amplifier": 1,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": -70,
+            "activationUpperBound": -55
+        },
+        {
+            "potion": "slowness",
+            "amplifier": 0,
+            "duration": 200,
+            "interval": 0,
+            "activationLowerBound": -55,
+            "activationUpperBound": -35
+        }
+    ]
+}

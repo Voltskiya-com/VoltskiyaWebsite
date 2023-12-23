@@ -8,13 +8,13 @@ export function AppHeader() {
     const bgcolor = useTheme().palette.background.paper;
     return (
         <Header
-            home={{ route: urls.home, title: 'Voltskiya-GM' }}
+            home={{ fullRoute: urls.home, title: 'Voltskiya-GM' }}
             links={[
-                { route: '/', title: 'Home' },
-                { route: '/commands', title: 'Commands' },
-                { route: '/mob', title: 'Mobs' },
-                { route: '/spawn', title: 'Spawn' },
-                { route: 'voltskiya.com', title: '/client' },
+                { fullRoute: '/', title: 'Home' },
+                { fullRoute: '/commands', title: 'Commands' },
+                { fullRoute: '/mob', title: 'Mobs' },
+                { fullRoute: '/spawn', title: 'Spawn' },
+                { fullRoute: 'voltskiya.com', title: '/client' },
             ]}
             bgcolor={bgcolor}
             logo={logo}

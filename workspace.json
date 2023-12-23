@@ -1,9 +1,0 @@
-{
-    "version": 2,
-    "projects": {
-        "admin": "apps/admin",
-        "api": "libs/api",
-        "client": "apps/client",
-        "ui-components": "libs/ui-components"
-    }
-}

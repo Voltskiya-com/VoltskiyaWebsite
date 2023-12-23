@@ -7,7 +7,6 @@ import { urls } from './util/routes';
 export function AppHeader() {
     const palette = useTheme().palette;
     const bgcolor = palette.grey[900];
-    console.log(palette.background);
     return (
         <Header
             home={urls.Home}

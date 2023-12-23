@@ -1,5 +1,3 @@
-import 'reflect-metadata';
-
 import { ThemeProvider } from '@mui/material';
 import { CssBaseline } from '@mui/material';
 import { enableElfProdMode } from '@ngneat/elf';

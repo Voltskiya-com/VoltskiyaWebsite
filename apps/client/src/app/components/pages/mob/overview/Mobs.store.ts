@@ -1,5 +1,5 @@
-import { useObservableMemo } from '@appleptr16/elemental';
-import { Optional } from '@appleptr16/utilities';
+import { useObservableMemo } from '@app/util';
+import { Optional } from '@app/util';
 import { createStore } from '@ngneat/elf';
 import {
     getEntity,

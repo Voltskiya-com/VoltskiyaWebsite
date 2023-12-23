@@ -1,5 +1,5 @@
 import { AppButton, AppTypography, Page } from '@app/ui';
-import { Optional } from '@appleptr16/utilities';
+import { Optional } from '@app/util';
 import { Card, Chip, Stack, TextField } from '@mui/material';
 
 import { Mob } from '../../../database/mobs/MapJsonMobs';

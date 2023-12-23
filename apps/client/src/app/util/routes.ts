@@ -1,8 +1,8 @@
-import { Component } from 'react';
-import { FeaturePage } from '../components/pages/feature/FeaturePage';
-import { OverviewPage } from '../components/pages/overview/OverviewPage';
-import { MobsPage } from '../components/pages/mob/overview/MobPage';
 import { CommandsPage } from '../components/pages/commands/CommandsPage';
+import { FeaturePage } from '../components/pages/feature/FeaturePage';
+import { MobsPage } from '../components/pages/mob/overview/MobPage';
+import { OverviewPage } from '../components/pages/overview/OverviewPage';
+import { PlaceholderPage } from '../components/pages/placeholder/PlaceholderPage';
 
 export const urls = {
     Home: {
@@ -21,7 +21,7 @@ export const urls = {
                 title: 'Top',
                 route: '/',
                 fullRoute: '',
-                render: OverviewPage,
+                render: FeaturePage,
             },
             commands: {
                 title: 'Commands',
@@ -38,10 +38,24 @@ export const urls = {
         },
     },
     Tools: {
-        title: 'Recipe',
-        route: '/recipe',
+        title: 'Tools',
+        route: '/tool',
         fullRoute: '',
-        render: OverviewPage,
+        render: PlaceholderPage,
+        divisions: {
+            top: {
+                title: 'Top',
+                route: '',
+                fullRoute: '',
+                render: PlaceholderPage,
+            },
+            recipe: {
+                title: 'Recipes',
+                route: '/recipe',
+                fullRoute: '',
+                render: PlaceholderPage,
+            },
+        },
     },
 };
 export interface UrlRoute {

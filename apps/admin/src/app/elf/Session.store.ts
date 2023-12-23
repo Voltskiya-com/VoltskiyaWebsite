@@ -1,6 +1,6 @@
 import { SessionBase } from '@app/api';
-import { useObservableMemo } from '@appleptr16/elemental';
-import { Optional } from '@appleptr16/utilities';
+import { useObservableMemo } from '@app/util';
+import { Optional } from '@app/util';
 import { createStore, setProp, withProps } from '@ngneat/elf';
 import { useEffect, useState } from 'react';
 import { map } from 'rxjs';

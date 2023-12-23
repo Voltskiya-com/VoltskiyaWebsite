@@ -1,8 +1,0 @@
-{
-    "bow_like_move": {
-        "requirements": ["Must be Monster & RangedAttackMob"],
-        "works": true,
-        "config": "none",
-        "upgraded": true
-    }
-}

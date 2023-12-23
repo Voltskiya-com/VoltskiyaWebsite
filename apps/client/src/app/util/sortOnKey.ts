@@ -1,4 +1,3 @@
-import { Optional } from '@appleptr16/utilities';
 import fuzzysort from 'fuzzysort';
 
 type KeyOfStringValues<T> = keyof {
@@ -11,7 +10,7 @@ export function sortOnKey<T>(
     mobs: T[],
     key: KeyOfStringValues<T>,
     filter?: string
-) {
+): T[] {
     if (!key) return [];
     if (!filter)
         return mobs.sort((e1: T, e2: T) =>
@@ -22,5 +21,5 @@ export function sortOnKey<T>(
 
     return fuzzysort
         .go(filter, mobs, { all: true, key: key as unknown as string })
-        .map((result) => result.obj);
+        .map((result: { obj: T }) => result.obj);
 }

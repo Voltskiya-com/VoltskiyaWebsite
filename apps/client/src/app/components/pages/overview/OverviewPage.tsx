@@ -31,7 +31,7 @@ export function OverviewPage() {
                     title="Goal"
                     summary={
                         <AppTypography>
-                            Voltskiya is a harder survival experience.
+                            Voltskiya is a difficult survival experience.
                         </AppTypography>
                     }
                 />
